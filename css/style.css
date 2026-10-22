@@ -1,18 +1,49 @@
 :root {
---rc-red: #e0202a;
---rc-red-dark: #a50d14;
---rc-red-deep: #6e070c;
---rc-black: #0b0b0c;
---rc-surface: #111113;
---rc-surface-2: #26262a;
---rc-border: #2c2c31;
---rc-white: #ffffff;
---rc-text-soft: #d4d4d8;
---rc-text-mute: #a1a1aa;
---rc-gradient: linear-gradient(160deg,
-#e0202a 0%, #a50d14 55%, #6e070c 100%);
-/* / Así le decís a Bootstrap que use tus colores / */
---bs-body-bg: var( -rc-black);
---bs-body-color: var( -rc-white);
---bs-body-font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --rc-red: #e0202a;
+  --rc-red-dark: #a50d14;
+  --rc-red-deep: #6e070c;
+  --rc-black: #0b0b0c;
+  --rc-surface: #111113;
+  --rc-surface-2: #26262a;
+  --rc-border: #2c2c31;
+  --rc-white: #ffffff;
+  --rc-text-soft: #d4d4d8;
+  --rc-text-mute: #a1a1aa;
+  --rc-gradient: linear-gradient(160deg, #e0202a 0%, #a50d14 55%, #6e070c 100%);
+  /* / Así le decís a Bootstrap que use tus colores / */
+  --bs-body-bg: var(--rc-black);
+  --bs-body-color: var(--rc-white);
+  --bs-body-font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+.navar-color {
+  background-color: var(--rc-black);
+}
+.nabar-bg {
+  border-bottom: 1px solid var(--rc-border);
+}
+
+.nabar-img {
+  width: 150px;
+  height: auto;
+  margin-left: 100px;
+}
+
+.navbar-bg a.btn:not(.btn-nabar):hover,
+.navbar-bg a.btn:not(.btn-nabar):focus,
+.navbar-bg a.btn:not(.btn-nabar):active {
+  background-color: transparent;
+  color: var(--rc-white);
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.navbar-bg .btn-nabar,
+.navbar-bg .btn-nabar:hover,
+.navbar-bg .btn-nabar:focus,
+.navbar-bg .btn-nabar:active {
+  background-color: var(--rc-red);
+  color: var(--rc-white);
+  border-color: var(--rc-red);
+  box-shadow: none;
 }
