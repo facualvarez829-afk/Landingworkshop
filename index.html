@@ -43,53 +43,55 @@
 
       <section class="container my-4">
         <div class="card border-0 rounded-5">
-          <div class="card-body bg-danger p-4 p-md-5 rounded-5">
+          <div class="card-body Cartarojo p-4 p-md-5 rounded-5">
             <h4 class="card-title mb-3">
-              Workshop <span class="text-warning">Entradas limitadas</span>
+              <span class="fw-light">WORKSHOP</span>
+              <span class="fw-bold">ENTRADAS LIMITADAS</span>
             </h4>
 
             <div class="row align-items-center g-4">
               <div class="col-md-7">
-                <h1 class="Hero-titulo card-subtitle mb-3">
-                  ¿POR DÓNDE EMPIEZO A PROGRAMAR?
+                <h1 class="Hero-titulo card-subtitle mb-3 mt-1">
+                  <span class="text-white">¿POR DÓNDE</span><br />
+                  <span class="text-white">EMPIEZO A</span><br />
+                  <span class="text-black">PROGRAMAR?</span>
                 </h1>
 
-                <p class="card-text mb-4">
+                <p class="hero-descripcion my-4">
                   Una tarde con diez speakers de Rolling Code School para
                   ordenar tus primeros pasos: qué aprender, cómo practicar y
                   cómo mostrar lo que sabés.
                 </p>
 
                 <div class="d-flex flex-wrap gap-2">
-                  <a class="btn btn-primary rounded-pill px-4" href="#">
+                  <a class="btn Hero-btn rounded-pill px-4" href="#">
                     Comprar una entrada
                   </a>
-
-                  <a class="btn btn-success rounded-pill px-4" href="#">
+                  <a class="btn agenda-btn rounded-pill px-4" href="#">
                     Ver agenda
                   </a>
                 </div>
               </div>
 
               <div class="col-md-5">
-                <div class="card bg-warning p-3 rounded-4">
+                <div class="card card-negra p-3 rounded-4">
                   <div class="card-body p-0">
                     <div class="border-bottom pb-3 mb-3">
                       <div class="d-flex align-items-center gap-3">
-                        <i class="bi bi-calendar"></i>
+                        <i class="icono bi bi-calendar fs-2"></i>
 
                         <div>
-                          <p class="fw-bold mb-1">JUE 19/11</p>
-                          <p class="mb-0">18:00 hs</p>
+                          <h4 class="fw-bold mb-1">JUE 19/11</h4>
+                          <h3 class="mb-0">18:00 hs</h3>
                         </div>
                       </div>
                     </div>
 
                     <div class="border-bottom pb-3 mb-3">
                       <div class="d-flex align-items-center gap-3">
-                        <i class="bi bi-geo-alt-fill"></i>
+                        <i class="icono bi bi-geo-alt-fill fs-2"></i>
                         <div>
-                          <p class="fw-bold mb-0">Rolling Code School</p>
+                          <h5 class="fw-bold mb-0">Rolling Code School</h5>
                           <p class="mb-0">Gral. Paz 576, entrepiso</p>
                         </div>
                       </div>
@@ -97,9 +99,9 @@
 
                     <div class="mb-3">
                       <div class="d-flex align-items-center gap-3">
-                        <i class="bi bi-ticket-perforated"></i>
+                        <i class="icono bi bi-ticket-perforated fs-2"></i>
                         <div>
-                          <p class="fw-bold mb-0">Entradas desde $15.000</p>
+                          <h5 class="fw-bold mb-0">Entradas desde $15.000</h5>
                           <p class="mb-0">Early Bird hasta el 31/10</p>
                         </div>
                       </div>
@@ -108,7 +110,7 @@
                     <div class="d-flex flex-wrap gap-2">
                       <span class="btn rounded-pill border">Presencial</span>
                       <span class="btn rounded-pill border">Virtual</span>
-                      <span class="btn rounded-pill bg-primary"
+                      <span class="btn-rojo btn rounded-pill"
                         >Cupos limitados</span
                       >
                     </div>
@@ -119,25 +121,35 @@
           </div>
         </div>
         <div>
-          <div class="card border-0 rounded-5 mt-5 ms-5 me-5">
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <h4 class="card-title">120</h4>
-                  <p class="card-subtitle fg-3">Lugares precensiales</p>
+          <div class="card border-0 rounded-4 card-negra mt-4 mx-md-4">
+            <div class="card-body p-4">
+              <div
+                class="datos-extra row row-cols-1 row-cols-md-4 g-4 text-start align-items-start"
+              >
+                <!-- Columna 1 -->
+                <div class="col">
+                  <h4 class="card-title fw-bold fs-2 mb-1">120</h4>
+                  <p class="card-subtitle mt-0 mb-0">lugares presenciales</p>
                 </div>
-                <div>
-                  <h4 class="card-title">10</h4>
-                  <p class="card-subtitle fg-3">charlas de speakers</p>
+
+                <!-- Columna 2 -->
+                <div class="col">
+                  <h4 class="card-title fw-bold fs-2 mb-1">10</h4>
+                  <p class="card-subtitle mt-0 mb-0">charlas de speakers</p>
                 </div>
-                <div>
-                  <h4 class="card-title">3h 40</h4>
-                  <p class="card-subtitle fg-3">de 18 a 21.40 hs</p>
+
+                <!-- Columna 3 -->
+                <div class="col">
+                  <h4 class="card-title fw-bold fs-2 mb-1">3 h 40</h4>
+                  <p class="card-subtitle mt-0 mb-0">de 18.00 a 21.40 hs</p>
                 </div>
-                <div>
-                  <h4 class="card-title">2</h4>
-                  <p class="card-subtitle fg-3">
-                    Modalidades:Presencial y Virtual
+
+                <!-- Columna 4 -->
+                <div class="col">
+                  <h4 class="card-title fw-bold fs-2 mb-1">2</h4>
+                  <p class="card-subtitle mt-0 mb-0">
+                    modalidades: presencial <br class="d-none d-md-block" />y
+                    virtual
                   </p>
                 </div>
               </div>

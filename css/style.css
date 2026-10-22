@@ -48,4 +48,96 @@ p {
   font-weight: 800;
   line-height: 1.02;
   letter-spacing: -1.5px;
+  text-transform: uppercase;
+}
+.hero-descripcion {
+  color: #ffe9ea;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.55;
+  max-width: 580px;
+}
+
+h2 {
+  font-size: clamp(34px, 4.5vw, 56px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.seccion {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.Hero-btn {
+  background: var(--rc-black);
+  color: var(--rc-white);
+  border: 1px solid var(--rc-black);
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+}
+
+.Hero-btn:hover {
+  background: var(--rc-black);
+  color: var(--rc-white);
+  border: 1px solid var(--rc-black);
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+}
+
+.agenda-btn {
+  color: var(--rc-white);
+  border: 1px solid var(--rc-white);
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+}
+.agenda-btn:hover {
+  color: var(--rc-white);
+  border: 1px solid var(--rc-white);
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+}
+
+.btn-rojo {
+  color: var(--rc-white);
+  background: var(--rc-red);
+}
+.btn-rojo:hover {
+  color: var(--rc-white);
+  background: var(--rc-red);
+}
+
+.Cartarojo {
+  background: linear-gradient(
+    to bottom,
+    var(--rc-red) 0%,
+    var(--rc-red-dark) 55%,
+    var(--rc-red-deep) 100%
+  );
+}
+
+.card-negra {
+  background-color: var(--rc-black);
+}
+.icono {
+  color: var(--rc-red);
+}
+
+.datos-extra .card-title {
+  color: var(--rc-red) !important;
+}
+
+.card-negra {
+  background-color: var(--rc-surface, #111113);
+  border: 1px solid var(--rc-border, #2c2c31) !important;
+  border-radius: 28px !important;
 }
