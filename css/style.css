@@ -78,7 +78,6 @@ h2 {
   background: var(--rc-black);
   color: var(--rc-white);
   border: 1px solid var(--rc-black);
-  border-radius: 8px;
   padding: 12px 24px;
   font-weight: 600;
 }
@@ -87,9 +86,16 @@ h2 {
   background: var(--rc-black);
   color: var(--rc-white);
   border: 1px solid var(--rc-black);
-  border-radius: 8px;
   padding: 12px 24px;
   font-weight: 600;
+}
+
+.Hero-btn:active {
+  background-color: var(--rc-black) !important;
+  color: var(--rc-white) !important;
+  border-color: var(--rc-black) !important;
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 .agenda-btn {
@@ -114,6 +120,13 @@ h2 {
 .btn-rojo:hover {
   color: var(--rc-white);
   background: var(--rc-red);
+}
+.btn-rojo:active {
+  color: var(--rc-white) !important;
+  background-color: var(--rc-red) !important;
+  border-color: var(--rc-red) !important;
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 .Cartarojo {
