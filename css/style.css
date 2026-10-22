@@ -1,18 +1,51 @@
 :root {
---rc-red: #e0202a;
---rc-red-dark: #a50d14;
---rc-red-deep: #6e070c;
---rc-black: #0b0b0c;
---rc-surface: #111113;
---rc-surface-2: #26262a;
---rc-border: #2c2c31;
---rc-white: #ffffff;
---rc-text-soft: #d4d4d8;
---rc-text-mute: #a1a1aa;
---rc-gradient: linear-gradient(160deg,
-#e0202a 0%, #a50d14 55%, #6e070c 100%);
-/* / Así le decís a Bootstrap que use tus colores / */
---bs-body-bg: var( -rc-black);
---bs-body-color: var( -rc-white);
---bs-body-font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --rc-red: #e0202a;
+  --rc-red-dark: #a50d14;
+  --rc-red-deep: #6e070c;
+  --rc-black: #0b0b0c;
+  --rc-surface: #111113;
+  --rc-surface-2: #26262a;
+  --rc-border: #2c2c31;
+  --rc-white: #ffffff;
+  --rc-text-soft: #d4d4d8;
+  --rc-text-mute: #a1a1aa;
+  --rc-gradient: linear-gradient(160deg, #e0202a 0%, #a50d14 55%, #6e070c 100%);
+  /*Así le decís a Bootstrap que use tus colores */
+  --bs-body-bg: var(--rc-black);
+  --bs-body-color: var(--rc-white);
+  --bs-body-font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+/* Configuración general de la página */
+body {
+  margin: 0;
+  background-color: var(--rc-black);
+  color: var(--rc-white);
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+/* Tipografía general */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--rc-white);
+  font-weight: 800;
+}
+
+p {
+  color: var(--rc-text-soft);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+/* Titulo pricipal hero */
+.Hero-titulo {
+  font-size: clamp(40px, 6vw, 88px);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -1.5px;
 }
