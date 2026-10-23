@@ -11,8 +11,142 @@
 --rc-text-mute: #a1a1aa;
 --rc-gradient: linear-gradient(160deg,
 #e0202a 0%, #a50d14 55%, #6e070c 100%);
-/* / Así le decís a Bootstrap que use tus colores / */
 --bs-body-bg: var( -rc-black);
 --bs-body-color: var( -rc-white);
 --bs-body-font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
 }
+
+/* <!-- COMIENZO DE PAGOS --> */
+
+/* BANNER EARLY BIRD */
+.early-banner {
+  background: linear-gradient(
+    100deg,
+    #1d0c0e 0%,
+    #160d0f 30%,
+    #111113 65%,
+    #111113 100%
+  );
+  border: 1px solid var(--rc-border);
+}
+
+/* ETIQUETA */
+.early-label {
+  color: var(--rc-red);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+}
+
+/* TÍTULO */
+.early-title {
+  color: var(--rc-white);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  line-height: 1.2;
+}
+
+/* DESCRIPCIÓN */
+.early-description {
+  color: var(--rc-text-mute);
+  font-size: 0.85rem;
+}
+
+/* CONTADOR */
+.countdown-box {
+  background: var(--rc-black);
+  border: 1px solid var(--rc-border);
+  flex: 1;
+  min-width: 0;
+  max-width: 110px;
+}
+
+/* NÚMEROS */
+.countdown-number {
+  display: block;
+  color: var(--rc-white);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* UNIDADES */
+.countdown-unit {
+  display: block;
+  color: var(--rc-text-mute);
+  font-size: 0.65rem;
+}
+
+/* INFORMACIÓN DE VENTAS */
+.early-progress-label {
+  color: var(--rc-text-soft);
+  font-size: 0.75rem;
+}
+
+.early-progress-percent {
+  color: var(--rc-text-mute);
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+/* BARRA DE PROGRESO */
+.early-progress {
+  height: 8px;
+  background: var(--rc-surface-2);
+  border-radius: 50rem;
+  overflow: hidden;
+}
+
+.early-progress-bar {
+  background: var(--rc-red);
+  border-radius: 50rem;
+}
+
+/* Cards: estado normal */
+.ticket-card {
+  background: var(--rc-surface);
+  border: 1px solid var(--rc-border);
+  color: var(--rc-white);
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+/* Cards: al pasar el mouse */
+.ticket-card:hover {
+  background: var(--rc-gradient);
+  border-color: var(--rc-red);
+}
+
+/* Textos de las cards */
+.ticket-card .ticket-title,
+.ticket-card .ticket-price,
+.ticket-card .ticket-feature,
+.ticket-card .ticket-description,
+.ticket-card .ticket-muted {
+  color: var(--rc-white);
+}
+
+/* Tildes: rojo por defecto */
+.ticket-card .ticket-check {
+  color: var(--rc-red);
+  transition: color 0.25s ease;
+}
+
+/* Tildes: blancas al pasar el mouse */
+.ticket-card:hover .ticket-check {
+  color: var(--rc-white);
+}
+
+/* Botones: estado normal */
+.ticket-button {
+  background: var(--rc-surface-2);
+  color: var(--rc-white);
+  border: 1px solid var(--rc-border);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+/* Botones: hover independiente */
+.ticket-button:hover {
+  background: var(--rc-white);
+  color: var(--rc-black);
+  border-color: var(--rc-white);
+}
+
+/* <!-- FINAL DE PAGOS --> */
