@@ -10,40 +10,61 @@
   --rc-text-soft: #d4d4d8;
   --rc-text-mute: #a1a1aa;
   --rc-gradient: linear-gradient(160deg, #e0202a 0%, #a50d14 55%, #6e070c 100%);
-  /* / Así le decís a Bootstrap que use tus colores / */
+  
   --bs-body-bg: var(--rc-black);
   --bs-body-color: var(--rc-white);
   --bs-body-font-family: "Plus Jakarta Sans", system-ui, sans-serif;
 }
 
-.navar-color {
+body {
+  background-color: var(--rc-black);
+  color: var(--rc-white);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.navbar-color {
   background-color: var(--rc-black);
 }
-.nabar-bg {
-  border-bottom: 1px solid var(--rc-border);
+
+.navbar-bg {
+  border-bottom: 1px solid #1f1f23;
+  background-color: var(--rc-black);
+}
+
+.navbar-enlace,
+.navbar-enlace:focus,
+.navbar-enlace:active,
+.navbar-enlace.active {
+  color: var(--rc-text-soft) !important; /* Mantiene su color normal al hacer clic */
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar-enlace:hover {
+  color: var(--rc-red) !important; /* Se pone rojo solo cuando pasas el mouse */
 }
 
 .nabar-img {
   width: 150px;
   height: auto;
-  margin-left: 100px;
 }
 
-.navbar-bg a.btn:not(.btn-nabar):hover,
-.navbar-bg a.btn:not(.btn-nabar):focus,
-.navbar-bg a.btn:not(.btn-nabar):active {
-  background-color: transparent;
-  color: var(--rc-white);
-  border-color: transparent;
-  box-shadow: none;
-}
-
-.navbar-bg .btn-nabar,
-.navbar-bg .btn-nabar:hover,
-.navbar-bg .btn-nabar:focus,
-.navbar-bg .btn-nabar:active {
+.btn-nabar{
   background-color: var(--rc-red);
-  color: var(--rc-white);
+  color:#ffe9ea ;
   border-color: var(--rc-red);
-  box-shadow: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.btn-nabar:hover{
+  background-color: var(--rc-red-deep);
+  transition: var(--rc-black);
 }
