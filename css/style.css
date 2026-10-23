@@ -75,6 +75,9 @@ body {
   font-weight: 400;
   color: var(--rc-text-mute);
 }
+
+/*footer*/
+
  
 @media (max-width: 575.98px) {
   .agenda__hora { flex-basis: 56px; font-size: 20px; }
