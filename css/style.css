@@ -1,24 +1,22 @@
 :root {
---rc-red: #e0202a;
---rc-red-dark: #a50d14;
---rc-red-deep: #6e070c;
---rc-black: #0b0b0c;
---rc-surface: #111113;
---rc-surface-2: #26262a;
---rc-border: #2c2c31;
---rc-white: #ffffff;
---rc-text-soft: #d4d4d8;
---rc-text-mute: #a1a1aa;
---rc-gradient: linear-gradient(160deg,
-#e0202a 0%, #a50d14 55%, #6e070c 100%);
-/* / Así le decís a Bootstrap que use tus colores / */
---bs-body-bg: var( -rc-black);
---bs-body-color: var( -rc-white);
---bs-body-font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --rc-red: #e0202a;
+  --rc-red-dark: #a50d14;
+  --rc-red-deep: #6e070c;
+  --rc-black: #0b0b0c;
+  --rc-surface: #111113;
+  --rc-surface-2: #26262a;
+  --rc-border: #2c2c31;
+  --rc-white: #ffffff;
+  --rc-text-soft: #d4d4d8;
+  --rc-text-mute: #a1a1aa;
+  --rc-gradient: linear-gradient(160deg, #e0202a 0%, #a50d14 55%, #6e070c 100%);
+  /* / Así le decís a Bootstrap que use tus colores / */
+  --bs-body-bg: var(-rc-black);
+  --bs-body-color: var(-rc-white);
+  --bs-body-font-family: "Plus Jakarta Sans", system-ui, sans-serif;
 }
 
-
-/* CONTENEDOR */
+/* -- COMIENZO DE PASARELA DE PAGO -- */
 .checkout-wrapper {
   background: var(--rc-black);
   color: var(--rc-white);
@@ -36,15 +34,15 @@
   letter-spacing: 0.12em;
 }
 
-/* ETAPAS DE COMPRA */
 .step-link {
   background: var(--rc-red-dark);
   color: var(--rc-white);
   border: 1px solid var(--rc-red);
   text-decoration: none;
-  transition: background-color 0.2s ease,
-              color 0.2s ease,
-              border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .step-link:hover,
@@ -54,20 +52,15 @@
   border-color: var(--rc-black);
 }
 
-.step-link.active {
-  background: var(--rc-red-dark);
-  color: var(--rc-white);
-}
-
-/* ENTRADAS */
 .ticket-option {
   background: var(--rc-white);
   color: var(--rc-black);
   border: 1px solid #dedee0;
   cursor: pointer;
-  transition: background-color 0.2s ease,
-              color 0.2s ease,
-              border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .ticket-description {
@@ -87,7 +80,6 @@
   color: var(--rc-text-soft);
 }
 
-/* BOTONES DE CANTIDAD */
 .quantity-button {
   width: 2.5rem;
   height: 2.5rem;
@@ -95,9 +87,10 @@
   border-radius: 50%;
   background: var(--rc-white);
   color: var(--rc-black);
-  transition: background-color 0.2s ease,
-              color 0.2s ease,
-              border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .quantity-button:hover {
@@ -106,23 +99,23 @@
   border-color: var(--rc-red);
 }
 
-/* BOTÓN CONTINUAR */
 .checkout-button {
   background: var(--rc-black);
   color: var(--rc-white);
   border: 1px solid var(--rc-black);
-  transition: background-color 0.2s ease,
-              color 0.2s ease,
-              border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
-.checkout-button:hover {
+.checkout-button:hover,
+.checkout-button:focus-visible {
   background: var(--rc-red);
   color: var(--rc-white);
   border-color: var(--rc-red);
 }
 
-/* RESUMEN */
 .summary-label {
   color: var(--rc-red);
   letter-spacing: 0.1em;
@@ -138,9 +131,9 @@
   opacity: 1;
 }
 
-/* RESPONSIVE */
 @media (max-width: 575.98px) {
   .checkout-container {
     border-radius: 1.25rem;
   }
 }
+/* -- FINAL DE PASARELA DE PAGO -- */
