@@ -12,7 +12,40 @@
 --rc-gradient: linear-gradient(160deg,
 #e0202a 0%, #a50d14 55%, #6e070c 100%);
 /* / Así le decís a Bootstrap que use tus colores / */
---bs-body-bg: var( -rc-black);
---bs-body-color: var( -rc-white);
+--bs-body-bg: var(--rc-black);
+--bs-body-color: var(--rc-white);
 --bs-body-font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+
+.p-random {
+    color: var(--rc-red);
+}
+
+.speaker{
+  background-color: var(--rc-surface);
+    border: 1px solid var(--rc-border);
+    border-radius: 32px;
+}
+
+.nombre{
+    color: var(--rc-white);
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.btn-speaker{
+    background-color: var(--rc-border);
+}
+
+.btn-speaker:hover{
+    background-color: var(--rc-red);
+}
+
+.speaker-texto{
+    color: var(--rc-text-mute);
 }
