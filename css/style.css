@@ -18,15 +18,28 @@
 }
 
 
-/* Título principal */
-.checkout-heading {
+/* CONTENEDOR */
+.checkout-wrapper {
+  background: var(--rc-black);
   color: var(--rc-white);
+  min-height: 100vh;
 }
 
-/* Pasos de compra: rojo por defecto, negro al pasar el cursor */
+.checkout-container {
+  max-width: 1500px;
+  margin: auto;
+  border-radius: 2rem;
+  background: var(--rc-gradient);
+}
+
+.checkout-label {
+  letter-spacing: 0.12em;
+}
+
+/* ETAPAS DE COMPRA */
 .step-link {
-  color: var(--rc-white);
   background: var(--rc-red-dark);
+  color: var(--rc-white);
   border: 1px solid var(--rc-red);
   text-decoration: none;
   transition: background-color 0.2s ease,
@@ -46,7 +59,7 @@
   color: var(--rc-white);
 }
 
-/* Opciones de entradas: blanco por defecto */
+/* ENTRADAS */
 .ticket-option {
   background: var(--rc-white);
   color: var(--rc-black);
@@ -62,7 +75,6 @@
   transition: color 0.2s ease;
 }
 
-/* Negro al pasar el cursor */
 .ticket-option:hover,
 .ticket-option:focus-within {
   background: var(--rc-black);
@@ -73,4 +85,62 @@
 .ticket-option:hover .ticket-description,
 .ticket-option:focus-within .ticket-description {
   color: var(--rc-text-soft);
+}
+
+/* BOTONES DE CANTIDAD */
+.quantity-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid #dedee0;
+  border-radius: 50%;
+  background: var(--rc-white);
+  color: var(--rc-black);
+  transition: background-color 0.2s ease,
+              color 0.2s ease,
+              border-color 0.2s ease;
+}
+
+.quantity-button:hover {
+  background: var(--rc-red);
+  color: var(--rc-white);
+  border-color: var(--rc-red);
+}
+
+/* BOTÓN CONTINUAR */
+.checkout-button {
+  background: var(--rc-black);
+  color: var(--rc-white);
+  border: 1px solid var(--rc-black);
+  transition: background-color 0.2s ease,
+              color 0.2s ease,
+              border-color 0.2s ease;
+}
+
+.checkout-button:hover {
+  background: var(--rc-red);
+  color: var(--rc-white);
+  border-color: var(--rc-red);
+}
+
+/* RESUMEN */
+.summary-label {
+  color: var(--rc-red);
+  letter-spacing: 0.1em;
+}
+
+.summary-description,
+.summary-muted {
+  color: var(--rc-text-mute);
+}
+
+.order-summary hr {
+  border-color: var(--rc-border);
+  opacity: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 575.98px) {
+  .checkout-container {
+    border-radius: 1.25rem;
+  }
 }
