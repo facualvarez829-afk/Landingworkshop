@@ -16,3 +16,212 @@
 --bs-body-color: var( -rc-white);
 --bs-body-font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
 }
+
+
+/* CONTENEDOR GENERAL */
+.checkout-wrapper {
+  background: var(--rc-black);
+  color: var(--rc-white);
+  min-height: 100vh;
+}
+
+.checkout-container {
+  max-width: 1500px;
+  margin: auto;
+  border-radius: 2rem;
+  background: var(--rc-gradient);
+}
+
+/* ENCABEZADO */
+.checkout-label,
+.summary-label {
+  color: var(--rc-red);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+}
+
+.checkout-label {
+  color: var(--rc-white);
+}
+
+.checkout-heading {
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  letter-spacing: -0.04em;
+}
+
+/* ETAPAS 1, 2, 3 Y 4 */
+.step-link {
+  color: var(--rc-white);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50rem;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.8rem;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.step-link:hover,
+.step-link:focus-visible {
+  background: var(--rc-white);
+  color: var(--rc-red-dark);
+  border-color: var(--rc-white);
+}
+
+.step-link.active {
+  background: var(--rc-black);
+  border-color: var(--rc-black);
+}
+
+/* PANEL BLANCO DE ENTRADAS */
+.ticket-selection {
+  background: var(--rc-white);
+  color: var(--rc-black);
+}
+
+.section-heading {
+  font-size: 1.25rem;
+}
+
+/* OPCIONES DE ENTRADA */
+.ticket-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border: 2px solid #dedee0;
+  border-radius: 1rem;
+  background: var(--rc-white);
+  color: var(--rc-black);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.ticket-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.ticket-name {
+  font-weight: 700;
+}
+
+.ticket-description {
+  color: #71717a;
+  font-size: 0.78rem;
+}
+
+.ticket-price {
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* HOVER DE LAS ENTRADAS */
+.ticket-option:hover,
+.ticket-option:focus-within {
+  background: var(--rc-gradient);
+  color: var(--rc-white);
+  border-color: var(--rc-red);
+}
+
+.ticket-option:hover .ticket-description,
+.ticket-option:focus-within .ticket-description {
+  color: var(--rc-white);
+}
+
+/* OPCIÓN SELECCIONADA */
+.ticket-option.selected {
+  background: var(--rc-black);
+  color: var(--rc-white);
+  border-color: var(--rc-black);
+}
+
+.ticket-option.selected .ticket-description {
+  color: var(--rc-text-mute);
+}
+
+/* CANTIDAD */
+.quantity-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid #dedee0;
+  border-radius: 50%;
+  background: var(--rc-white);
+  color: var(--rc-black);
+  font-size: 1.3rem;
+  font-weight: 700;
+  transition: background 0.2s, color 0.2s;
+}
+
+.quantity-button:hover {
+  background: var(--rc-red);
+  color: var(--rc-white);
+  border-color: var(--rc-red);
+}
+
+.quantity-number {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+/* BOTÓN CONTINUAR */
+.checkout-button {
+  background: var(--rc-black);
+  color: var(--rc-white);
+  border: 1px solid var(--rc-black);
+  transition: background 0.2s, color 0.2s;
+}
+
+.checkout-button:hover {
+  background: var(--rc-red);
+  color: var(--rc-white);
+  border-color: var(--rc-red);
+}
+
+/* RESUMEN DEL PEDIDO */
+.order-summary {
+  background: var(--rc-black);
+  color: var(--rc-white);
+}
+
+.summary-label {
+  color: var(--rc-red);
+}
+
+.summary-title {
+  font-size: 1.15rem;
+}
+
+.summary-description,
+.summary-muted {
+  color: var(--rc-text-mute);
+}
+
+.summary-total {
+  font-size: clamp(1.6rem, 3vw, 2rem);
+}
+
+.order-summary hr {
+  border-color: var(--rc-border);
+  opacity: 1;
+}
+
+/* AJUSTES PARA CELULARES */
+@media (max-width: 575.98px) {
+  .checkout-container {
+    border-radius: 1.25rem;
+  }
+
+  .checkout-heading {
+    font-size: 2rem;
+  }
+
+  .ticket-option {
+    padding: 0.75rem;
+  }
+
+  .ticket-price {
+    font-size: 0.9rem;
+  }
+}
