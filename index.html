@@ -26,175 +26,90 @@
       <!-- COMIENZO DE UBICACIÓN -->
       <!-- FINAL DE UBICACIÓN -->
       <!-- COMIENZO DE PASARELA DE PAGO -->
-       <section class="checkout-container p-3 p-md-4 p-xl-5">
+       <article>
+        
+<!-- Título principal -->
+<h1 class="text-white fw-bold mb-0">
+  Finalizá tu compra
+</h1>
 
-    <!-- Encabezado -->
-    <header class="mb-4">
-      <div class="row align-items-end g-4">
-        <div class="col-12 col-lg-7">
-          <p class="checkout-label fw-bold mb-2">COMPRA SEGURA</p>
-          <h1 class="checkout-heading fw-bold mb-0">
-            Finalizá tu compra
-          </h1>
-        </div>
+<!-- Pasos de compra -->
+<nav class="checkout-steps d-flex flex-wrap justify-content-lg-end gap-2"
+     aria-label="Etapas de compra">
 
-        <!-- Etapas de compra -->
-        <div class="col-12 col-lg-5">
-          <nav class="checkout-steps d-flex flex-wrap justify-content-lg-end gap-2"
-               aria-label="Etapas de compra">
+  <a href="#entrada" class="step-link active">
+    1 Entrada
+  </a>
 
-            <a href="#entrada" class="step-link active">
-              <span>1</span> Entrada
-            </a>
+  <a href="#datos" class="step-link">
+    2 Datos
+  </a>
 
-            <a href="#datos" class="step-link">
-              <span>2</span> Datos
-            </a>
+  <a href="#pago" class="step-link">
+    3 Pago
+  </a>
 
-            <a href="#pago" class="step-link">
-              <span>3</span> Pago
-            </a>
+  <a href="#listo" class="step-link">
+    4 Listo
+  </a>
 
-            <a href="#listo" class="step-link">
-              <span>4</span> Listo
-            </a>
+</nav>
 
-          </nav>
-        </div>
-      </div>
-    </header>
+<!-- Panel de entradas -->
+<section class="ticket-selection bg-white text-black p-3 p-md-4 rounded-4">
 
-    <!-- Contenido principal -->
-    <div class="row g-4 align-items-start">
+  <h2 class="fw-bold fs-5 mb-3">
+    Elegí tu entrada
+  </h2>
 
-      <!-- Selección de entradas -->
-      <div class="col-12 col-lg-7" id="entrada">
-        <section class="ticket-selection p-3 p-md-4 rounded-4">
+  <div class="d-grid gap-2">
 
-          <h2 class="section-heading fw-bold mb-3">
-            Elegí tu entrada
-          </h2>
+    <label class="ticket-option d-flex justify-content-between align-items-center gap-3 p-3 rounded-4">
+      <input type="radio" name="ticket" value="early" checked
+             class="visually-hidden">
 
-          <div class="d-grid gap-2">
+      <span class="d-flex flex-column">
+        <span class="ticket-name fw-bold">Early Bird</span>
+        <span class="ticket-description small">
+          Presencial · hasta el 31/10
+        </span>
+      </span>
 
-            <!-- Early Bird -->
-            <label class="ticket-option selected">
-              <input type="radio" name="ticket" value="early"
-                     checked class="visually-hidden">
+      <span class="ticket-price fw-bold text-nowrap">$25.000</span>
+    </label>
 
-              <span class="ticket-info">
-                <span class="ticket-name">Early Bird</span>
-                <span class="ticket-description">
-                  Presencial · hasta el 31/10
-                </span>
-              </span>
+    <label class="ticket-option d-flex justify-content-between align-items-center gap-3 p-3 rounded-4">
+      <input type="radio" name="ticket" value="general"
+             class="visually-hidden">
 
-              <span class="ticket-price">$25.000</span>
-            </label>
+      <span class="d-flex flex-column">
+        <span class="ticket-name fw-bold">General</span>
+        <span class="ticket-description small">
+          Presencial · desde el 1/11
+        </span>
+      </span>
 
-            <!-- General -->
-            <label class="ticket-option">
-              <input type="radio" name="ticket" value="general"
-                     class="visually-hidden">
+      <span class="ticket-price fw-bold text-nowrap">$35.000</span>
+    </label>
 
-              <span class="ticket-info">
-                <span class="ticket-name">General</span>
-                <span class="ticket-description">
-                  Presencial · desde el 1/11
-                </span>
-              </span>
+    <label class="ticket-option d-flex justify-content-between align-items-center gap-3 p-3 rounded-4">
+      <input type="radio" name="ticket" value="virtual"
+             class="visually-hidden">
 
-              <span class="ticket-price">$35.000</span>
-            </label>
+      <span class="d-flex flex-column">
+        <span class="ticket-name fw-bold">Virtual</span>
+        <span class="ticket-description small">
+          Transmisión en vivo y grabación
+        </span>
+      </span>
 
-            <!-- Virtual -->
-            <label class="ticket-option">
-              <input type="radio" name="ticket" value="virtual"
-                     class="visually-hidden">
+      <span class="ticket-price fw-bold text-nowrap">$15.000</span>
+    </label>
 
-              <span class="ticket-info">
-                <span class="ticket-name">Virtual</span>
-                <span class="ticket-description">
-                  Transmisión en vivo y grabación
-                </span>
-              </span>
+  </div>
+</section>
 
-              <span class="ticket-price">$15.000</span>
-            </label>
-
-          </div>
-
-          <!-- Cantidad -->
-          <div class="d-flex justify-content-between align-items-center mt-3 mb-3">
-            <label for="quantity" class="fw-bold small">
-              Cantidad
-            </label>
-
-            <div class="d-flex align-items-center gap-3">
-              <button type="button" class="quantity-button"
-                      aria-label="Disminuir cantidad">−</button>
-
-              <span id="quantity" class="quantity-number">1</span>
-
-              <button type="button" class="quantity-button"
-                      aria-label="Aumentar cantidad">+</button>
-            </div>
-          </div>
-
-          <button type="button" class="btn checkout-button w-100 rounded-pill py-3 fw-bold">
-            Continuar
-          </button>
-
-          <p class="small text-secondary mt-3 mb-0">
-            Pasarela de pago de ejemplo: no se procesan pagos ni se guardan datos.
-          </p>
-
-        </section>
-      </div>
-
-      <!-- Resumen del pedido -->
-      <aside class="col-12 col-lg-5">
-        <section class="order-summary rounded-4 p-3 p-md-4">
-
-          <p class="summary-label fw-bold mb-3">TU PEDIDO</p>
-
-          <h2 class="summary-title fw-bold mb-1">
-            Workshop Rolling Code School
-          </h2>
-
-          <p class="summary-description small mb-3">
-            Jueves 19/11 · 18.00 hs · Gral. Paz 576
-          </p>
-
-          <hr>
-
-          <div class="d-flex justify-content-between gap-3 mb-3">
-            <span class="summary-muted">1 entrada Early Bird</span>
-            <span class="summary-muted text-nowrap">$25.000</span>
-          </div>
-
-          <div class="d-flex justify-content-between gap-3 mb-3">
-            <span class="summary-muted">Cargo por servicio (5%)</span>
-            <span class="summary-muted text-nowrap">$1.250</span>
-          </div>
-
-          <hr>
-
-          <div class="d-flex justify-content-between align-items-center gap-3 mt-3">
-            <span class="fw-bold">Total</span>
-            <span class="summary-total fw-bold">$26.250</span>
-          </div>
-
-          <p class="summary-description small mt-3 mb-0">
-            <span class="text-danger me-2">🔒</span>
-            Pago protegido. Recibís la entrada por email.
-          </p>
-
-        </section>
-      </aside>
-
-    </div>
-  </section>
+       </article>
       <!-- FINAL DE PASARELA DE PAGO -->
     </main>
     <footer></footer>
