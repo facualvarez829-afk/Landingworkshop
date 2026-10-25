@@ -76,6 +76,80 @@ body {
   color: var(--rc-text-mute);
 }
 
+/* COMIENZO DE UBICACIÓN */
+.ubicacion { padding: 96px 0; }
+.ubicacion .container { max-width: 1200px; padding-inline: 24px; }
+
+.ubicacion__bloque {
+  border-radius: 40px;
+  padding: 40px 24px;
+}
+
+.ubicacion__etiqueta {
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--rc-red);
+}
+
+.ubicacion__titulo {
+  font-size: clamp(34px, 4.5vw, 56px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: var(--rc-white);
+}
+
+.ubicacion__pin { font-size: 22px; color: var(--rc-red); }
+.ubicacion__calle { font-size: 18px; font-weight: 600; color: var(--rc-white); }
+.ubicacion__ciudad { font-size: 16px; font-weight: 400; color: var(--rc-text-mute); }
+
+.ubicacion__chip {
+  padding: 6px 14px;
+  border: 1px solid #3a3a40;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--rc-text-soft);
+}
+
+.ubicacion__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 28px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background .2s, border-color .2s;
+}
+.ubicacion__btn--rojo { background: var(--rc-red); color: var(--rc-white); border: 2px solid var(--rc-red); }
+.ubicacion__btn--rojo:hover { background: var(--rc-red-dark); border-color: var(--rc-red-dark); color: var(--rc-white); }
+.ubicacion__btn--borde { background: transparent; color: var(--rc-white); border: 2px solid #3a3a40; }
+.ubicacion__btn--borde:hover { border-color: var(--rc-white); color: var(--rc-white); }
+
+.ubicacion__mapa {
+  height: 360px;
+  border: 1px solid var(--rc-border);
+  border-radius: 32px;
+  overflow: hidden;
+}
+.ubicacion__mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  /* Modo oscuro para que combine con la página (borrá esta línea si lo querés a color) */
+  filter: invert(90%) hue-rotate(180deg) grayscale(30%);
+}
+
+/* En pantallas grandes el bloque sobresale 56px a cada lado, como pide el diseño */
+@media (min-width: 1360px) {
+  .ubicacion__bloque { margin-inline: -56px; padding: 56px; }
+}
+
 /*footer*/
 .footer {
     padding: 50px 0;
