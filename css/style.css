@@ -560,56 +560,127 @@ h2,
   color: var(--rc-black);
   border-color: var(--rc-white);
 }
-/* FINAL DE PAGOS */
+/* <!-- FINAL DE PAGOS --> */
 
-/* FOOTER */
-.footer {
-  padding: 50px 0;
-  border-top: 1px solid var(--rc-border);
-}
-
-.footer .container {
-  max-width: 1400px;
-  padding-inline: 50px;
-}
-
-.footer__logo {
-  display: block;
-  height: 30px;
-  width: auto;
-}
-
-.footer__red {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 999px;
-  border: 1px solid #3a3a40;
-  background: #111113;
+/* -- COMIENZO DE PASARELA DE PAGO -- */
+.checkout-wrapper {
+  background: var(--rc-black);
   color: var(--rc-white);
-  font-size: 16px;
+  min-height: 100vh;
+}
+
+.checkout-container {
+  max-width: 1500px;
+  margin: auto;
+  border-radius: 2rem;
+  background: var(--rc-gradient);
+}
+
+.checkout-label {
+  letter-spacing: 0.12em;
+}
+
+.step-link {
+  background: var(--rc-red-dark);
+  color: var(--rc-white);
+  border: 1px solid var(--rc-red);
   text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
-@media (max-width: 767.98px) {
-  .footer {
-    padding: 40px 0;
-  }
+.step-link:hover,
+.step-link:focus-visible {
+  background: var(--rc-black);
+  color: var(--rc-white);
+  border-color: var(--rc-black);
+}
 
-  .footer .container {
-    padding-inline: 24px;
-    flex-direction: column;
-    justify-content: center !important;
-    align-items: center !important;
-    text-align: center;
-    gap: 24px !important;
-  }
+.ticket-option {
+  background: var(--rc-white);
+  color: var(--rc-black);
+  border: 1px solid #dedee0;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
 
-  .footer__redes {
-    flex-wrap: wrap;
-    justify-content: center;
+.ticket-description {
+  color: var(--rc-text-mute);
+  transition: color 0.2s ease;
+}
+
+.ticket-option:hover,
+.ticket-option:focus-within {
+  background: var(--rc-black);
+  color: var(--rc-white);
+  border-color: var(--rc-black);
+}
+
+.ticket-option:hover .ticket-description,
+.ticket-option:focus-within .ticket-description {
+  color: var(--rc-text-soft);
+}
+
+.quantity-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid #dedee0;
+  border-radius: 50%;
+  background: var(--rc-white);
+  color: var(--rc-black);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.quantity-button:hover {
+  background: var(--rc-red);
+  color: var(--rc-white);
+  border-color: var(--rc-red);
+}
+
+.checkout-button {
+  background: var(--rc-black);
+  color: var(--rc-white);
+  border: 1px solid var(--rc-black);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.checkout-button:hover,
+.checkout-button:focus-visible {
+  background: var(--rc-red);
+  color: var(--rc-white);
+  border-color: var(--rc-red);
+}
+
+.summary-label {
+  color: var(--rc-red);
+  letter-spacing: 0.1em;
+}
+
+.summary-description,
+.summary-muted {
+  color: var(--rc-text-mute);
+}
+
+.order-summary hr {
+  border-color: var(--rc-border);
+  opacity: 1;
+}
+
+@media (max-width: 575.98px) {
+  .checkout-container {
+    border-radius: 1.25rem;
   }
 }
-/* FINAL DEL FOOTER */
+/* -- FINAL DE PASARELA DE PAGO -- */
+
