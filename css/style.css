@@ -62,6 +62,8 @@
   --rc-text-soft: #d4d4d8;
   --rc-text-mute: #a1a1aa;
   --rc-gradient: linear-gradient(160deg, #e0202a 0%, #a50d14 55%, #6e070c 100%);
+
+  /* Así le decimos a Bootstrap que use nuestros colores */
   --bs-body-bg: var(--rc-black);
   --bs-body-color: var(--rc-white);
   --bs-body-font-family: "Plus Jakarta Sans", system-ui, sans-serif;
@@ -80,7 +82,20 @@ body {
   font-family: "Plus Jakarta Sans", system-ui, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
+.container {
+  max-width: 1200px;
+}
+
+.seccion {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Tipografía general */
 h1,
 h2,
 h3,
@@ -98,7 +113,7 @@ p {
   line-height: 1.55;
 }
 
-
+/* COMIENZO DEL HERO */
 .Hero-titulo {
   font-size: clamp(40px, 6vw, 88px);
   font-weight: 800;
@@ -106,6 +121,7 @@ p {
   letter-spacing: -1.5px;
   text-transform: uppercase;
 }
+
 .hero-descripcion {
   color: #ffe9ea;
   font-size: 20px;
@@ -204,6 +220,7 @@ h2 {
   padding: 12px 24px;
   font-weight: 600;
 }
+
 .agenda-btn:hover {
   color: var(--rc-white);
   border: 1px solid var(--rc-white);
@@ -216,10 +233,12 @@ h2 {
   color: var(--rc-white);
   background: var(--rc-red);
 }
+
 .btn-rojo:hover {
   color: var(--rc-white);
   background: var(--rc-red);
 }
+
 .btn-rojo:active {
   color: var(--rc-white) !important;
   background-color: var(--rc-red) !important;
@@ -238,8 +257,11 @@ h2 {
 }
 
 .card-negra {
-  background-color: var(--rc-black);
+  background-color: var(--rc-surface, #111113);
+  border: 1px solid var(--rc-border, #2c2c31) !important;
+  border-radius: 28px !important;
 }
+
 .icono {
   color: var(--rc-red);
 }
@@ -247,14 +269,84 @@ h2 {
 .datos-extra .card-title {
   color: var(--rc-red) !important;
 }
+/* FINAL DEL HERO */
 
-.card-negra {
-  background-color: var(--rc-surface, #111113);
-  border: 1px solid var(--rc-border, #2c2c31) !important;
-  border-radius: 28px !important;
+/* COMIENZO DE AGENDA */
+.agenda {
+  padding: 96px 0;
 }
 
+.agenda .container {
+  max-width: 1200px;
+  padding-inline: 24px;
+}
 
+.agenda__etiqueta {
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--rc-red);
+}
+
+h2,
+.agenda__titulo {
+  font-size: clamp(34px, 4.5vw, 56px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: var(--rc-white);
+}
+
+.agenda__texto {
+  max-width: 340px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--rc-text-soft);
+}
+
+.agenda__lista {
+  border-top: 1px solid var(--rc-border);
+}
+
+.agenda__item {
+  border-bottom: 1px solid var(--rc-border);
+}
+
+.agenda__hora {
+  flex: 0 0 72px;
+  font-size: 24px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--rc-red);
+}
+
+.agenda__charla {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--rc-white);
+}
+
+.agenda__speaker {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--rc-text-mute);
+}
+
+@media (max-width: 575.98px) {
+  .agenda__hora {
+    flex-basis: 56px;
+    font-size: 20px;
+  }
+  .agenda__charla {
+    font-size: 18px;
+  }
+}
+/* FINAL DE AGENDA */
+
+/* COMIENZO DE PAGOS */
 .early-banner {
   background: linear-gradient(
     100deg,
@@ -369,7 +461,57 @@ h2 {
   color: var(--rc-black);
   border-color: var(--rc-white);
 }
+/* FINAL DE PAGOS */
+
+/* FOOTER */
+.footer {
+  padding: 50px 0;
+  border-top: 1px solid var(--rc-border);
+}
+
+.footer .container {
+  max-width: 1400px;
+  padding-inline: 50px;
+}
 
 
+.footer__logo {
+  display: block;
+  height: 30px;
+  width: auto;
+}
 
+.footer__red {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid #3a3a40;
+  background: #111113;
+  color: var(--rc-white);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+@media (max-width: 767.98px) {
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer .container {
+    padding-inline: 24px;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 24px !important;
+  }
+
+  .footer__redes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
