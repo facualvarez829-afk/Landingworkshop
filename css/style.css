@@ -49,8 +49,6 @@
 
 .speaker-texto{
     color: var(--rc-text-mute);
-}
-=======
   --rc-red: #e0202a;
   --rc-red-dark: #a50d14;
   --rc-red-deep: #6e070c;
@@ -633,6 +631,7 @@ h2,
   display: block;
   height: 30px;
   width: auto;
+}
 
 .checkout-label {
   letter-spacing: 0.12em;
