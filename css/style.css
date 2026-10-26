@@ -62,13 +62,17 @@
   --rc-text-soft: #d4d4d8;
   --rc-text-mute: #a1a1aa;
   --rc-gradient: linear-gradient(160deg, #e0202a 0%, #a50d14 55%, #6e070c 100%);
-  /*Así le decís a Bootstrap que use tus colores */
   --bs-body-bg: var(--rc-black);
   --bs-body-color: var(--rc-white);
   --bs-body-font-family: "Plus Jakarta Sans", system-ui, sans-serif;
 }
 
-/* Configuración general de la página */
+
+body {
+  background-color: var(--rc-black);
+  color: var(--rc-white);
+  font-family: "Plus Jakarta Sans", sans-serif;
+
 body {
   margin: 0;
   background-color: var(--rc-black);
@@ -76,7 +80,7 @@ body {
   font-family: "Plus Jakarta Sans", system-ui, sans-serif;
 }
 
-/* Tipografía general */
+
 h1,
 h2,
 h3,
@@ -94,7 +98,7 @@ p {
   line-height: 1.55;
 }
 
-/* Titulo pricipal hero */
+
 .Hero-titulo {
   font-size: clamp(40px, 6vw, 88px);
   font-weight: 800;
@@ -121,6 +125,49 @@ h2 {
   max-width: 1200px;
 }
 
+
+.navbar-color {
+  background-color: var(--rc-black);
+}
+
+.navbar-bg {
+  border-bottom: 1px solid #1f1f23;
+  background-color: var(--rc-black);
+}
+
+.navbar-enlace,
+.navbar-enlace:focus,
+.navbar-enlace:active,
+.navbar-enlace.active {
+  color: var(--rc-text-soft) !important; /* Mantiene su color normal al hacer clic */
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar-enlace:hover {
+  color: var(--rc-red) !important; /* Se pone rojo solo cuando pasas el mouse */
+}
+
+.nabar-img {
+  width: 150px;
+  height: auto;
+}
+
+.btn-nabar{
+  background-color: var(--rc-red);
+  color:#ffe9ea ;
+  border-color: var(--rc-red);
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.btn-nabar:hover{
+  background-color: var(--rc-red-deep);
+  transition: var(--rc-black);
+}
 .seccion {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -207,7 +254,7 @@ h2 {
   border-radius: 28px !important;
 }
 
-/* <!-- COMIENZO DE PAGOS --> */
+
 .early-banner {
   background: linear-gradient(
     100deg,
@@ -322,4 +369,7 @@ h2 {
   color: var(--rc-black);
   border-color: var(--rc-white);
 }
-/* <!-- FINAL DE PAGOS --> */
+
+
+
+
