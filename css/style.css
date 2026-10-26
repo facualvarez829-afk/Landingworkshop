@@ -49,8 +49,6 @@
 
 .speaker-texto{
     color: var(--rc-text-mute);
-}
-=======
   --rc-red: #e0202a;
   --rc-red-dark: #a50d14;
   --rc-red-deep: #6e070c;
@@ -340,30 +338,6 @@ h2 {
   padding-bottom: 80px;
 }
 
-.Hero-btn {
-  background: var(--rc-black);
-  color: var(--rc-white);
-  border: 1px solid var(--rc-black);
-  padding: 12px 24px;
-  font-weight: 600;
-}
-
-.Hero-btn:hover {
-  background: var(--rc-black);
-  color: var(--rc-white);
-  border: 1px solid var(--rc-black);
-  padding: 12px 24px;
-  font-weight: 600;
-}
-
-.Hero-btn:active {
-  background-color: var(--rc-black) !important;
-  color: var(--rc-white) !important;
-  border-color: var(--rc-black) !important;
-  box-shadow: none !important;
-  outline: none !important;
-}
-
 .agenda-btn {
   color: var(--rc-white);
   border: 1px solid var(--rc-white);
@@ -373,30 +347,25 @@ h2 {
 }
 
 .agenda-btn:hover {
+ background: var(--rc-black);
   color: var(--rc-white);
-  border: 1px solid var(--rc-white);
-  border-radius: 8px;
+  border: 1px solid var(--rc-black);
   padding: 12px 24px;
   font-weight: 600;
 }
 
 .btn-rojo {
   color: var(--rc-white);
-  background: var(--rc-red);
+   border: 2px solid var(--rc-border);
 }
 
 .btn-rojo:hover {
   color: var(--rc-white);
   background: var(--rc-red);
+
 }
 
-.btn-rojo:active {
-  color: var(--rc-white) !important;
-  background-color: var(--rc-red) !important;
-  border-color: var(--rc-red) !important;
-  box-shadow: none !important;
-  outline: none !important;
-}
+
 
 .Cartarojo {
   background: linear-gradient(
@@ -633,6 +602,7 @@ h2,
   display: block;
   height: 30px;
   width: auto;
+}
 
 .checkout-label {
   letter-spacing: 0.12em;
