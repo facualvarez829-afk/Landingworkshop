@@ -44,6 +44,7 @@
   background-color: var(--rc-red);
 }
 
+
 .speaker-texto {
   color: var(--rc-text-mute);
   --rc-red: #e0202a;
@@ -62,6 +63,9 @@
   --bs-body-bg: var(--rc-black);
   --bs-body-color: var(--rc-white);
   --bs-body-font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+.speaker-texto{
+    color: var(--rc-text-mute);
+
 }
 
 body {
@@ -382,30 +386,6 @@ body {
   padding-bottom: 80px;
 }
 
-.Hero-btn {
-  background: var(--rc-black);
-  color: var(--rc-white);
-  border: 1px solid var(--rc-black);
-  padding: 12px 24px;
-  font-weight: 600;
-}
-
-.Hero-btn:hover {
-  background: var(--rc-black);
-  color: var(--rc-white);
-  border: 1px solid var(--rc-black);
-  padding: 12px 24px;
-  font-weight: 600;
-}
-
-.Hero-btn:active {
-  background-color: var(--rc-black) !important;
-  color: var(--rc-white) !important;
-  border-color: var(--rc-black) !important;
-  box-shadow: none !important;
-  outline: none !important;
-}
-
 .agenda-btn {
   color: var(--rc-white);
   border: 1px solid var(--rc-white);
@@ -415,30 +395,25 @@ body {
 }
 
 .agenda-btn:hover {
+ background: var(--rc-black);
   color: var(--rc-white);
-  border: 1px solid var(--rc-white);
-  border-radius: 8px;
+  border: 1px solid var(--rc-black);
   padding: 12px 24px;
   font-weight: 600;
 }
 
 .btn-rojo {
   color: var(--rc-white);
-  background: var(--rc-red);
+   border: 2px solid var(--rc-border);
 }
 
 .btn-rojo:hover {
   color: var(--rc-white);
   background: var(--rc-red);
+
 }
 
-.btn-rojo:active {
-  color: var(--rc-white) !important;
-  background-color: var(--rc-red) !important;
-  border-color: var(--rc-red) !important;
-  box-shadow: none !important;
-  outline: none !important;
-}
+
 
 .Cartarojo {
   background: linear-gradient(
@@ -787,7 +762,71 @@ h2,
   }
 }
 
-/* -- FINAL DE PASARELA DE PAGO -- */
+.error-main {
+  background: radial-gradient(
+    ellipse at center,
+    var(--rc-red-deep) 0%,
+    var(--rc-black) 65%
+  );
+  min-height: 620px;
+}
+
+.error-badge {
+  display: inline-block;
+  background: var(--rc-surface-2);
+  color: var(--rc-red);
+  border: 1px solid var(--rc-border);
+  line-height: 1.2;
+}
+
+.error-number {
+  font-size: clamp(6rem, 15vw, 11rem);
+  background: linear-gradient(
+    135deg,
+    var(--rc-white),
+    #ffaaa5,
+    var(--rc-red)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.error-description {
+  color: var(--rc-text-soft);
+  max-width: 580px;
+}
+
+.error-button-primary {
+  background: var(--rc-red);
+  color: var(--rc-white);
+  border: 1px solid var(--rc-red);
+  transition: background-color 0.2s ease,
+              border-color 0.2s ease;
+}
+
+.error-button-primary:hover,
+.error-button-primary:focus-visible {
+  background: var(--rc-red-dark);
+  color: var(--rc-white);
+  border-color: var(--rc-red-dark);
+}
+
+.error-button-secondary {
+  background: var(--rc-surface-2);
+  color: var(--rc-white);
+  border: 1px solid var(--rc-border);
+  transition: background-color 0.2s ease,
+              border-color 0.2s ease;
+}
+
+.error-button-secondary:hover,
+.error-button-secondary:focus-visible {
+  background: var(--rc-red-dark);
+  color: var(--rc-white);
+  border-color: var(--rc-red);
+}
+
 
 .sp-l{
   color: var(--rc-text-mute);
