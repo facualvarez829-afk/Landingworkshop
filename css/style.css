@@ -789,8 +789,14 @@ h2,
 
 /* -- FINAL DE PASARELA DE PAGO -- */
 
+.sp-l{
+  color: var(--rc-text-mute);
+  max-width: 650px;
+}
+
+
 .fomul-color {
-  background-color: var(--rc-surface-2);
+  background-color: var(--rc-border);
 }
 
 .Letras-sponsor {
@@ -798,7 +804,7 @@ h2,
 }
 
 .bg-form {
-  background-color: var(--rc-border);
+  background-color: var(--rc-surface);
 }
 
 .form-control::placeholder,
