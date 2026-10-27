@@ -630,21 +630,33 @@
             </div>
 
             <div class="col-12 col-lg-4">
-              <div class="d-flex justify-content-center gap-2">
+              <div class="d-flex justify-content-center gap-2 flex-wrap">
                 <div class="countdown-box text-center rounded-4 p-2">
-                  <span class="countdown-number">17</span>
+                  <span class="countdown-number" id="countdown-days">00</span>
                   <span class="countdown-unit">DÍAS</span>
                 </div>
+
                 <div class="countdown-box text-center rounded-4 p-2">
-                  <span class="countdown-number">09</span>
+                  <span class="countdown-number" id="countdown-hours">00</span>
                   <span class="countdown-unit">HORAS</span>
                 </div>
+
                 <div class="countdown-box text-center rounded-4 p-2">
-                  <span class="countdown-number">24</span>
+                  <span class="countdown-number" id="countdown-minutes"
+                    >00</span
+                  >
                   <span class="countdown-unit">MIN</span>
+                </div>
+
+                <div class="countdown-box text-center rounded-4 p-2">
+                  <span class="countdown-number" id="countdown-seconds"
+                    >00</span
+                  >
+                  <span class="countdown-unit">SEG</span>
                 </div>
               </div>
             </div>
+
 
             <div class="col-12 col-lg-4">
               <div
@@ -1669,5 +1681,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="/temporizador.js"></script>
   </body>
 </html>

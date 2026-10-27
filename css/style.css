@@ -545,27 +545,45 @@ h2,
 }
 
 .countdown-box {
-  background: var(--rc-black);
-  border: 1px solid var(--rc-border);
+  background: #0b0b0c;
+  border: 1px solid #303033;
+  min-width: 85px;
   flex: 1;
-  min-width: 0;
-  max-width: 110px;
+  max-width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .countdown-number {
-  display: block;
-  color: var(--rc-white);
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 800;
-  line-height: 1.2;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
 }
 
 .countdown-unit {
-  display: block;
-  color: var(--rc-text-mute);
-  font-size: 0.65rem;
+  color: #b8b8c0;
+  font-size: 0.75rem;
+  margin-top: 4px;
 }
 
+@media (max-width: 480px) {
+  .countdown-box {
+    min-width: 0;
+    padding: 8px 4px !important;
+  }
+
+  .countdown-number {
+    font-size: 1.6rem;
+  }
+
+  .countdown-unit {
+    font-size: 0.65rem;
+  }
+}
 .early-progress-label {
   color: var(--rc-text-soft);
   font-size: 0.75rem;
