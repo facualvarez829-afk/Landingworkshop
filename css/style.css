@@ -828,6 +828,24 @@ h2,
   border-color: var(--rc-red);
 }
 
+.sponsor-join-btn {
+  background: var(--rc-red);
+  color: var(--rc-white);
+  border: 1px solid var(--rc-red);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.sponsor-join-btn:hover,
+.sponsor-join-btn:focus-visible {
+  background: var(--rc-white);
+  color: var(--rc-black);
+  border-color: var(--rc-white);
+}
+
+
 .sponsors-section {
   background: var(--rc-black);
   color: var(--rc-white);
