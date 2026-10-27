@@ -759,8 +759,6 @@ h2,
   border-color: var(--rc-red);
 }
 
-
-/* SECCIÓN GENERAL */
 .sponsors-section {
   background: var(--rc-black);
   color: var(--rc-white);
@@ -775,7 +773,6 @@ h2,
   font-size: 0.85rem;
 }
 
-/* ETIQUETAS DE NIVEL */
 .sponsor-tier-badge,
 .sponsor-category {
   display: inline-block;
@@ -809,7 +806,6 @@ h2,
   border-color: #65452c;
 }
 
-/* TARJETAS */
 .sponsor-card {
   min-width: 0;
   overflow-wrap: anywhere;
@@ -835,7 +831,6 @@ h2,
   outline-offset: 3px;
 }
 
-/* DIAMANTE */
 .sponsor-diamond {
   min-height: 250px;
   border: 2px solid var(--rc-red-dark);
@@ -865,7 +860,6 @@ h2,
   border-color: #ffe600;
 }
 
-/* ORO */
 .sponsor-gold {
   border-color: #4e3d25;
 }
@@ -875,7 +869,6 @@ h2,
   border-color: #e6b84b;
 }
 
-/* BRONCE */
 .sponsor-bronze {
   border-color: var(--rc-border);
 }
@@ -885,7 +878,6 @@ h2,
   border-color: #d99455;
 }
 
-/* LOGOS */
 .sponsor-logo-box {
   background: var(--rc-surface-2);
   border: 1px solid var(--rc-border);
@@ -911,7 +903,6 @@ h2,
   object-fit: contain;
 }
 
-/* TEXTO Y DATOS */
 .sponsor-name {
   color: var(--rc-white);
   font-size: 1rem;
@@ -965,7 +956,6 @@ h2,
   color: var(--rc-white);
 }
 
-/* RESPETO A MOVIMIENTO REDUCIDO */
 @media (prefers-reduced-motion: reduce) {
   .sponsor-card,
   .sponsor-external {
