@@ -1096,3 +1096,8 @@ h2,
   color: #8b8b95 !important;
   opacity: 1 !important;
 }
+
+
+textarea#mensaje {
+  resize: none !important;
+}
