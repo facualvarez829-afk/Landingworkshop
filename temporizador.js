@@ -38,9 +38,6 @@ function actualizarContador() {
     (diferencia / (1000 * 60)) % 60
   );
 
-  const segundos = Math.floor(
-    (diferencia / 1000) % 60
-  );
 
   document.getElementById("countdown-days").textContent =
     String(dias).padStart(2, "0");
@@ -50,9 +47,6 @@ function actualizarContador() {
 
   document.getElementById("countdown-minutes").textContent =
     String(minutos).padStart(2, "0");
-
-  document.getElementById("countdown-seconds").textContent =
-    String(segundos).padStart(2, "0");
 }
 
 // Mostrar el contador inmediatamente.
