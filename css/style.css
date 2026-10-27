@@ -63,6 +63,7 @@
   --bs-body-bg: var(--rc-black);
   --bs-body-color: var(--rc-white);
   --bs-body-font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+}
 .speaker-texto{
     color: var(--rc-text-mute);
 
