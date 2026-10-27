@@ -760,3 +760,221 @@ h2,
 }
 
 
+/* SECCIÓN GENERAL */
+.sponsors-section {
+  background: var(--rc-black);
+  color: var(--rc-white);
+}
+
+.sponsor-tier-title {
+  color: var(--rc-red);
+}
+
+.sponsor-tier-description {
+  color: var(--rc-text-mute);
+  font-size: 0.85rem;
+}
+
+/* ETIQUETAS DE NIVEL */
+.sponsor-tier-badge,
+.sponsor-category {
+  display: inline-block;
+  width: fit-content;
+  border: 1px solid var(--rc-border);
+  border-radius: 50rem;
+  padding: 0.2rem 0.55rem;
+  color: var(--rc-red);
+  background: var(--rc-surface);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sponsor-gold-text {
+  color: #e6b84b;
+}
+
+.sponsor-gold-badge,
+.sponsor-gold .sponsor-category {
+  color: #e6b84b;
+  border-color: #5d4825;
+}
+
+.sponsor-bronze-text {
+  color: #d99455;
+}
+
+.sponsor-bronze-badge {
+  color: #d99455;
+  border-color: #65452c;
+}
+
+/* TARJETAS */
+.sponsor-card {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  background: var(--rc-surface);
+  color: var(--rc-white);
+  border: 1px solid var(--rc-border);
+  transition: border-color 0.25s ease,
+              background-color 0.25s ease,
+              transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.sponsor-card:hover,
+.sponsor-card:focus-visible {
+  color: var(--rc-white);
+  background: var(--rc-surface-2);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px #00000030;
+}
+
+.sponsor-card:focus-visible {
+  outline: 2px solid var(--rc-white);
+  outline-offset: 3px;
+}
+
+/* DIAMANTE */
+.sponsor-diamond {
+  min-height: 250px;
+  border: 2px solid var(--rc-red-dark);
+  background: linear-gradient(145deg, var(--rc-surface-2), var(--rc-surface));
+}
+
+.sponsor-diamond:hover,
+.sponsor-diamond:focus-visible {
+  border-color: var(--rc-red);
+}
+
+.sponsor-aws {
+  border-color: #69401f;
+}
+
+.sponsor-aws:hover,
+.sponsor-aws:focus-visible {
+  border-color: #ff9900;
+}
+
+.sponsor-mercadolibre {
+  border-color: #b99b30;
+}
+
+.sponsor-mercadolibre:hover,
+.sponsor-mercadolibre:focus-visible {
+  border-color: #ffe600;
+}
+
+/* ORO */
+.sponsor-gold {
+  border-color: #4e3d25;
+}
+
+.sponsor-gold:hover,
+.sponsor-gold:focus-visible {
+  border-color: #e6b84b;
+}
+
+/* BRONCE */
+.sponsor-bronze {
+  border-color: var(--rc-border);
+}
+
+.sponsor-bronze:hover,
+.sponsor-bronze:focus-visible {
+  border-color: #d99455;
+}
+
+/* LOGOS */
+.sponsor-logo-box {
+  background: var(--rc-surface-2);
+  border: 1px solid var(--rc-border);
+  border-radius: 0.8rem;
+  width: 4rem;
+  aspect-ratio: 1;
+}
+
+.sponsor-logo-small {
+  width: 2.5rem;
+  border-radius: 0.6rem;
+}
+
+.sponsor-logo-tiny {
+  width: 2rem;
+  border-radius: 0.5rem;
+}
+
+.sponsor-logo {
+  display: block;
+  width: 65%;
+  height: 65%;
+  object-fit: contain;
+}
+
+/* TEXTO Y DATOS */
+.sponsor-name {
+  color: var(--rc-white);
+  font-size: 1rem;
+}
+
+.sponsor-description {
+  color: var(--rc-text-soft);
+  font-size: 0.75rem;
+}
+
+.sponsor-sector {
+  color: var(--rc-text-soft);
+  font-size: 0.7rem;
+}
+
+.sponsor-status {
+  color: var(--rc-red);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-align: end;
+}
+
+.sponsor-gold .sponsor-category,
+.sponsor-gold .sponsor-status {
+  color: #e6b84b;
+}
+
+.sponsor-bronze .sponsor-description {
+  font-size: 0.65rem;
+}
+
+.sponsor-card-footer {
+  border-top: 1px solid var(--rc-border);
+}
+
+.sponsor-external {
+  display: grid;
+  place-items: center;
+  width: 1.75rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--rc-surface-2);
+  color: var(--rc-text-soft);
+  transition: background-color 0.25s ease,
+              color 0.25s ease;
+}
+
+.sponsor-card:hover .sponsor-external,
+.sponsor-card:focus-visible .sponsor-external {
+  background: var(--rc-red);
+  color: var(--rc-white);
+}
+
+/* RESPETO A MOVIMIENTO REDUCIDO */
+@media (prefers-reduced-motion: reduce) {
+  .sponsor-card,
+  .sponsor-external {
+    transition: none;
+  }
+
+  .sponsor-card:hover,
+  .sponsor-card:focus-visible {
+    transform: none;
+  }
+}
+
