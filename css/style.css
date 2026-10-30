@@ -10,7 +10,6 @@
   --rc-text-soft: #d4d4d8;
   --rc-text-mute: #a1a1aa;
   --rc-gradient: linear-gradient(160deg, #e0202a 0%, #a50d14 55%, #6e070c 100%);
-  /* / Así le decís a Bootstrap que use tus colores / */
   --bs-body-bg: var(--rc-black);
   --bs-body-color: var(--rc-white);
   --bs-body-font-family: "Plus Jakarta Sans", system-ui, sans-serif;
@@ -778,6 +777,68 @@ h2,
 @media (max-width: 575.98px) {
   .checkout-container {
     border-radius: 1.25rem;
+  }
+}
+
+.ticket-option:has(input:checked) {
+  background: var(--rc-black);
+  color: var(--rc-white);
+  border-color: var(--rc-black);
+}
+
+.ticket-option:has(input:checked) .ticket-description {
+  color: var(--rc-text-soft);
+}
+
+#formSection {
+  animation: checkoutFade 0.3s ease;
+}
+
+#formSection .form-label {
+  color: var(--rc-black);
+  font-size: 0.9rem;
+}
+
+#formSection .form-control {
+  padding: 0.8rem 1rem;
+  border: 1px solid #dedee0;
+  border-radius: 0.7rem;
+  font-family: inherit;
+}
+
+#formSection .form-control:focus {
+  border-color: var(--rc-red);
+  box-shadow: 0 0 0 0.2rem rgba(224, 32, 42, 0.15);
+}
+
+.quantity-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@keyframes checkoutFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .checkout-container {
+    border-radius: 1.25rem;
+  }
+
+  .checkout-container h2 {
+    font-size: 2.2rem;
+  }
+
+  .order-summary {
+    margin-top: 0.5rem;
   }
 }
 

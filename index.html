@@ -1323,10 +1323,11 @@
       </article>
       <!-- FIN PAGOS -->
 
-      <!-- CHECKOUT DE EJEMPLO -->
+      <!-- CHECKOUT-->
+
       <article class="container-fluid checkout-wrapper py-4 py-lg-5">
         <section class="checkout-container p-3 p-md-4 p-xl-5">
-          <header class="mb-4">
+          <div class="mb-4">
             <div class="row align-items-end g-4">
               <div class="col-12 col-lg-7">
                 <p class="text-white fw-bold small mb-2 checkout-label">
@@ -1336,176 +1337,271 @@
                   Finalizá tu compra
                 </h2>
               </div>
-
               <div class="col-12 col-lg-5">
                 <nav
                   class="d-flex flex-wrap justify-content-lg-end gap-2"
                   aria-label="Etapas de compra"
                 >
                   <a
-                    href="#entrada"
+                    href="./pages/Error404.html"
                     class="step-link rounded-pill px-3 py-2 small"
-                    >1 Entrada</a
                   >
+                    1 Entrada
+                  </a>
                   <a
-                    href="#datos"
+                    href="./pages/Error404.html"
                     class="step-link rounded-pill px-3 py-2 small"
-                    >2 Datos</a
                   >
-                  <a href="#pago" class="step-link rounded-pill px-3 py-2 small"
-                    >3 Pago</a
-                  >
+                    2 Datos
+                  </a>
                   <a
-                    href="#listo"
+                    href="./pages/Error404.html"
                     class="step-link rounded-pill px-3 py-2 small"
-                    >4 Listo</a
                   >
+                    3 Pago
+                  </a>
+                  <a
+                    href="./pages/Error404.html"
+                    class="step-link rounded-pill px-3 py-2 small"
+                  >
+                    4 Listo
+                  </a>
                 </nav>
               </div>
             </div>
-          </header>
-
+          </div>
           <div class="row align-items-start g-4">
             <div class="col-12 col-lg-7" id="entrada">
               <section
                 class="ticket-selection bg-white text-black p-3 p-md-4 rounded-4"
               >
-                <h3 class="fw-bold fs-5 mb-3">Elegí tu entrada</h3>
+                <div id="ticketSection">
+                  <h3 class="fw-bold fs-5 mb-3">Elegí tu entrada</h3>
+                  <div class="d-grid gap-2">
+                    <label
+                      class="ticket-option d-flex justify-content-between align-items-center gap-3 p-3 rounded-4"
+                    >
+                      <input
+                        type="radio"
+                        name="ticket"
+                        value="early"
+                        class="visually-hidden"
+                        checked
+                      />
+                      <span class="d-flex flex-column">
+                        <span class="ticket-name fw-bold"> Early Bird </span>
 
-                <div class="d-grid gap-2">
-                  <label
-                    class="ticket-option d-flex justify-content-between align-items-center gap-3 p-3 rounded-4"
-                  >
-                    <input
-                      type="radio"
-                      name="ticket"
-                      value="early"
-                      class="visually-hidden"
-                      checked
-                    />
-                    <span class="d-flex flex-column">
-                      <span class="ticket-name fw-bold">Early Bird</span>
-                      <span class="ticket-description small"
-                        >Presencial · hasta el 31/10</span
-                      >
-                    </span>
-                    <span class="ticket-price fw-bold text-nowrap"
-                      >$25.000</span
+                        <span class="ticket-description small">
+                          Presencial · hasta el 31/10
+                        </span>
+                      </span>
+                      <span class="ticket-price fw-bold text-nowrap">
+                        $25.000
+                      </span>
+                    </label>
+                    <label
+                      class="ticket-option d-flex justify-content-between align-items-center gap-3 p-3 rounded-4"
                     >
-                  </label>
-
-                  <label
-                    class="ticket-option d-flex justify-content-between align-items-center gap-3 p-3 rounded-4"
-                  >
-                    <input
-                      type="radio"
-                      name="ticket"
-                      value="general"
-                      class="visually-hidden"
-                    />
-                    <span class="d-flex flex-column">
-                      <span class="ticket-name fw-bold">General</span>
-                      <span class="ticket-description small"
-                        >Presencial · desde el 1/11</span
-                      >
-                    </span>
-                    <span class="ticket-price fw-bold text-nowrap"
-                      >$35.000</span
+                      <input
+                        type="radio"
+                        name="ticket"
+                        value="general"
+                        class="visually-hidden"
+                      />
+                      <span class="d-flex flex-column">
+                        <span class="ticket-name fw-bold"> General </span>
+                        <span class="ticket-description small">
+                          Presencial · desde el 1/11
+                        </span>
+                      </span>
+                      <span class="ticket-price fw-bold text-nowrap">
+                        $35.000
+                      </span>
+                    </label>
+                    <label
+                      class="ticket-option d-flex justify-content-between align-items-center gap-3 p-3 rounded-4"
                     >
-                  </label>
-
-                  <label
-                    class="ticket-option d-flex justify-content-between align-items-center gap-3 p-3 rounded-4"
-                  >
-                    <input
-                      type="radio"
-                      name="ticket"
-                      value="virtual"
-                      class="visually-hidden"
-                    />
-                    <span class="d-flex flex-column">
-                      <span class="ticket-name fw-bold">Virtual</span>
-                      <span class="ticket-description small"
-                        >Transmisión en vivo y grabación</span
-                      >
-                    </span>
-                    <span class="ticket-price fw-bold text-nowrap"
-                      >$15.000</span
-                    >
-                  </label>
-                </div>
-
-                <div
-                  class="d-flex justify-content-between align-items-center mt-4 mb-3"
-                >
-                  <label for="quantity" class="fw-bold small">Cantidad</label>
-                  <div class="d-flex align-items-center gap-3">
-                    <button
-                      type="button"
-                      class="quantity-button"
-                      aria-label="Disminuir cantidad"
-                    >
-                      −
-                    </button>
-                    <span id="quantity" class="fw-bold fs-5">1</span>
-                    <button
-                      type="button"
-                      class="quantity-button"
-                      aria-label="Aumentar cantidad"
-                    >
-                      +
-                    </button>
+                      <input
+                        type="radio"
+                        name="ticket"
+                        value="virtual"
+                        class="visually-hidden"
+                      />
+                      <span class="d-flex flex-column">
+                        <span class="ticket-name fw-bold"> Virtual </span>
+                        <span class="ticket-description small">
+                          Transmisión en vivo y grabación
+                        </span>
+                      </span>
+                      <span class="ticket-price fw-bold text-nowrap">
+                        $15.000
+                      </span>
+                    </label>
                   </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-4 mb-3"
+                  >
+                    <label class="fw-bold small"> Cantidad </label>
+                    <div class="d-flex align-items-center gap-3">
+                      <button
+                        type="button"
+                        id="decrease"
+                        class="quantity-button"
+                        aria-label="Disminuir cantidad"
+                      >
+                        −
+                      </button>
+                      <span id="quantity" class="fw-bold fs-5"> 1 </span>
+                      <button
+                        type="button"
+                        id="increase"
+                        class="quantity-button"
+                        aria-label="Aumentar cantidad"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    id="continueButton"
+                    class="checkout-button w-100 text-center rounded-pill py-3 fw-bold"
+                  >
+                    Continuar
+                  </button>
+                  <p class="text-secondary small mt-3 mb-0">
+                    Pasarela de pago de ejemplo: no se procesan pagos ni se
+                    guardan datos.
+                  </p>
                 </div>
-
-                <a
-                  href="./pages/Error404.html"
-                  type="button"
-                  class="checkout-button w-100 text-center rounded-pill py-3 fw-bold"
-                >
-                  Continuar
-                </a>
-
-                <p class="text-secondary small mt-3 mb-0">
-                  Pasarela de pago de ejemplo: no se procesan pagos ni se
-                  guardan datos.
-                </p>
+                <div id="formSection" class="d-none">
+                  <h3 class="fw-bold fs-5 mb-2">Completá tus datos</h3>
+                  <p class="text-secondary small mb-4">
+                    Ingresá tus datos para continuar con la compra.
+                  </p>
+                  <form id="checkoutForm">
+                    <!-- NOMBRE -->
+                    <div class="mb-3">
+                      <label for="customerName" class="form-label fw-semibold">
+                        Nombre
+                      </label>
+                      <input
+                        type="text"
+                        id="customerName"
+                        name="nombre"
+                        class="form-control"
+                        placeholder="Ingresá tu nombre"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label
+                        for="customerSurname"
+                        class="form-label fw-semibold"
+                      >
+                        Apellido
+                      </label>
+                      <input
+                        type="text"
+                        id="customerSurname"
+                        name="apellido"
+                        class="form-control"
+                        placeholder="Ingresá tu apellido"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="customerEmail" class="form-label fw-semibold">
+                        Correo electrónico
+                      </label>
+                      <input
+                        type="email"
+                        id="customerEmail"
+                        class="form-control"
+                        placeholder="ejemplo@gmail.com"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="customerDni" class="form-label fw-semibold">
+                        DNI
+                      </label>
+                      <input
+                        type="text"
+                        id="customerDni"
+                        class="form-control"
+                        placeholder="Ingresá tu DNI"
+                        required
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <label for="customerPhone" class="form-label fw-semibold">
+                        Teléfono
+                      </label>
+                      <input
+                        type="tel"
+                        id="customerPhone"
+                        class="form-control"
+                        placeholder="Ingresá tu teléfono"
+                        required
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      class="checkout-button w-100 rounded-pill py-3 fw-bold"
+                    >
+                      Confirmar datos
+                    </button>
+                    <button
+                      type="button"
+                      id="backButton"
+                      class="btn btn-outline-dark w-100 rounded-pill py-3 fw-bold mt-2"
+                    >
+                      Volver
+                    </button>
+                  </form>
+                </div>
               </section>
             </div>
-
             <aside class="col-12 col-lg-5">
               <section
                 class="order-summary bg-black text-white rounded-4 p-3 p-md-4"
               >
                 <p class="summary-label fw-bold small mb-3">TU PEDIDO</p>
+
                 <h3 class="fw-bold fs-5 mb-1">Workshop Rolling Code School</h3>
+
                 <p class="summary-description small mb-3">
                   Jueves 19/11 · 18:00 hs · Gral. Paz 576
                 </p>
-
                 <hr />
-
                 <div class="d-flex justify-content-between gap-3 mb-3">
-                  <span class="summary-muted small">1 entrada Early Bird</span>
-                  <span class="summary-muted small text-nowrap">$25.000</span>
-                </div>
+                  <span id="ticketSummary" class="summary-muted small">
+                    1 entrada Early Bird
+                  </span>
 
+                  <span id="subtotal" class="summary-muted small text-nowrap">
+                    $25.000
+                  </span>
+                </div>
                 <div class="d-flex justify-content-between gap-3 mb-3">
-                  <span class="summary-muted small"
-                    >Cargo por servicio (5%)</span
-                  >
-                  <span class="summary-muted small text-nowrap">$1.250</span>
+                  <span class="summary-muted small">
+                    Cargo por servicio (5%)
+                  </span>
+                  <span id="serviceFee" class="summary-muted small text-nowrap">
+                    $1.250
+                  </span>
                 </div>
-
                 <hr />
-
                 <div
                   class="d-flex justify-content-between align-items-center gap-3 mt-3"
                 >
-                  <span class="fw-bold">Total</span>
-                  <span class="summary-total fw-bold fs-2">$26.250</span>
-                </div>
+                  <span class="fw-bold"> Total </span>
 
+                  <span id="total" class="summary-total fw-bold fs-2">
+                    $26.250
+                  </span>
+                </div>
                 <p class="summary-description small mt-3 mb-0">
                   <span class="text-danger me-2">🔒</span>
                   Pago protegido. Recibís la entrada por email.
@@ -1515,12 +1611,11 @@
           </div>
         </section>
       </article>
+
       <!-- FIN CHECKOUT -->
 
-
-
       <section class="container text-center">
-        <h1 class=" fw-bold mb-3">Sumate como Sponsor</h1>
+        <h1 class="fw-bold mb-3">Sumate como Sponsor</h1>
         <p class="mx-auto sp-l mb-4">
           Conecta con mas de 120 talentos IT, programadores junior, semi-seniors
           y lideres tecnologicos del norte argentino.Completa el formulario y
@@ -1651,8 +1746,6 @@
           </div>
         </form>
       </section>
-
-
 
       <!-- UBICACIÓN -->
       <section class="ubicacion" id="ubicacion">
@@ -1812,6 +1905,7 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="/JS/temporizador.js"></script>
+    <script src="/js/temporizador.js"></script>
+    <script src="/js/checkout.js"></script>
   </body>
 </html>
