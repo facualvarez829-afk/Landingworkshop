@@ -1,1817 +1,1523 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Landing Workshop para el evento de Rolling Code"
-    />
-    <meta
-      name="keywords"
-      content="información, evento, Rolling Code, horarios, precios, ubicación"
-    />
-    <meta
-      name="author"
-      content="Facundo Alvarez, Lautaro Carrizo, Agustín Herrera, Luca Octavio, Tadeo Leonel Jerez, Martin Javier Veliz"
-    />
 
-    <title>Landing Workshop</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Landing Workshop para el evento de Rolling Code" />
+  <meta name="keywords" content="información, evento, Rolling Code, horarios, precios, ubicación" />
+  <meta name="author"
+    content="Facundo Alvarez, Lautaro Carrizo, Agustín Herrera, Luca Octavio, Tadeo Leonel Jerez, Martin Javier Veliz" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+  <title>Landing Workshop</title>
 
-  <body>
-    <header class="navbar-bg">
-      <nav class="navbar navbar-expand-md navar-color">
-        <div class="container pb-2 mt-1">
-          <a class="navbar-brand" href="#inicio">
-            <img
-              class="nabar-img"
-              src="./img/logoWhite.webp"
-              alt="Logo de Rolling Code"
-            />
-          </a>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
-          <button
-            class="navbar-toggler border-0 shadow-none text-white"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<body>
+  <header class="navbar-bg">
+    <nav class="navbar navbar-expand-md navar-color">
+      <div class="container pb-2 mt-1">
+        <a class="navbar-brand" href="#inicio">
+          <img class="nabar-img" src="./img/logoWhite.webp" alt="Logo de Rolling Code" />
+        </a>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul
-              class="navbar-nav ms-auto mb-2 mb-md-0 align-items-center text-center"
-            >
-              <li class="nav-item">
-                <a class="nav-link navbar-enlace mb-2" href="#speaker"
-                  >Speakers</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbar-enlace mb-2" href="#agenda">Agenda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbar-enlace mb-2 me-md-3" href="#ubicacion"
-                  >Como llegar</a
-                >
-              </li>
-              <li class="nav-item mt-2 mt-md-0">
-                <a class="btn-nabar rounded-pill mb-2" href="#pagos"
-                  >Comprar entrada</a
-                >
-              </li>
-            </ul>
-          </div>
+        <button class="navbar-toggler border-0 shadow-none text-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-center text-center">
+            <li class="nav-item">
+              <a class="nav-link navbar-enlace mb-2" href="#speaker">Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-enlace mb-2" href="#agenda">Agenda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-enlace mb-2 me-md-3" href="#ubicacion">Como llegar</a>
+            </li>
+            <li class="nav-item mt-2 mt-md-0">
+              <a class="btn-nabar rounded-pill mb-2" href="#pagos">Comprar entrada</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <main id="inicio" style="background-color: var(--rc-black)">
-      <!-- HERO -->
-      <section class="container my-4">
-        <div class="card border-0 rounded-5">
-          <div class="card-body Cartarojo p-3 p-md-5 rounded-5">
-            <h4 class="card-title mb-3">
-              <span class="fw-light">WORKSHOP</span>
-              <span class="fw-bold">ENTRADAS LIMITADAS</span>
-            </h4>
+  <main id="inicio" style="background-color: var(--rc-black)">
+    <!-- HERO -->
+    <section class="container my-4">
+      <div class="card border-0 rounded-5">
+        <div class="card-body Cartarojo p-3 p-md-5 rounded-5">
+          <h4 class="card-title mb-3">
+            <span class="fw-light">WORKSHOP</span>
+            <span class="fw-bold">ENTRADAS LIMITADAS</span>
+          </h4>
 
-            <div class="row align-items-center g-4">
-              <div class="col-md-7">
-                <h1 class="Hero-titulo card-subtitle mb-3 mt-1">
-                  <span class="text-white">¿POR DÓNDE</span><br />
-                  <span class="text-white">EMPIEZO A</span><br />
-                  <span class="text-black">PROGRAMAR?</span>
-                </h1>
+          <div class="row align-items-center g-4">
+            <div class="col-md-7">
+              <h1 class="Hero-titulo card-subtitle mb-3 mt-1">
+                <span class="text-white">¿POR DÓNDE</span><br />
+                <span class="text-white">EMPIEZO A</span><br />
+                <span class="text-black">PROGRAMAR?</span>
+              </h1>
 
-                <p class="hero-descripcion my-4">
-                  Una tarde con diez speakers de Rolling Code School para
-                  ordenar tus primeros pasos: qué aprender, cómo practicar y
-                  cómo mostrar lo que sabés.
-                </p>
+              <p class="hero-descripcion my-4">
+                Una tarde con diez speakers de Rolling Code School para
+                ordenar tus primeros pasos: qué aprender, cómo practicar y
+                cómo mostrar lo que sabés.
+              </p>
 
-                <div class="d-flex flex-column flex-sm-row flex-wrap gap-2">
-                  <a class="agenda-btn btn rounded-pill px-4" href="#pagos">
-                    Comprar entrada
-                  </a>
-                  <a class="agenda-btn btn rounded-pill px-4" href="#agenda">
-                    Ver agenda
-                  </a>
-                </div>
+              <div class="d-flex flex-column flex-sm-row flex-wrap gap-2">
+                <a class="agenda-btn btn rounded-pill px-4" href="#pagos">
+                  Comprar entrada
+                </a>
+                <a class="agenda-btn btn rounded-pill px-4" href="#agenda">
+                  Ver agenda
+                </a>
               </div>
+            </div>
 
-              <div class="col-md-5">
-                <div class="card card-negra p-3 rounded-4">
-                  <div class="card-body p-4">
-                    <div class="border-bottom pb-3 mb-3">
-                      <div class="d-flex align-items-center gap-3">
-                        <i class="icono bi bi-calendar fs-2"></i>
-                        <div>
-                          <h4 class="fw-bold mb-1">JUE 19/11</h4>
-                          <h3 class="mb-0">18:00 hs</h3>
-                        </div>
+            <div class="col-md-5">
+              <div class="card card-negra p-3 rounded-4">
+                <div class="card-body p-4">
+                  <div class="border-bottom pb-3 mb-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <i class="icono bi bi-calendar fs-2"></i>
+                      <div>
+                        <h4 class="fw-bold mb-1">JUE 19/11</h4>
+                        <h3 class="mb-0">18:00 hs</h3>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="border-bottom pb-3 mb-3">
-                      <div class="d-flex align-items-center gap-3">
-                        <i class="icono bi bi-geo-alt-fill fs-2"></i>
-                        <div>
-                          <h5 class="fw-bold mb-0">Rolling Code School</h5>
-                          <p class="mb-0">Gral. Paz 576, entrepiso</p>
-                        </div>
+                  <div class="border-bottom pb-3 mb-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <i class="icono bi bi-geo-alt-fill fs-2"></i>
+                      <div>
+                        <h5 class="fw-bold mb-0">Rolling Code School</h5>
+                        <p class="mb-0">Gral. Paz 576, entrepiso</p>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="mb-3">
-                      <div class="d-flex align-items-center gap-3">
-                        <i class="icono bi bi-ticket-perforated fs-2"></i>
-                        <div>
-                          <h5 class="fw-bold mb-0">Entradas desde $15.000</h5>
-                          <p class="mb-0">Early Bird hasta el 31/10</p>
-                        </div>
+                  <div class="mb-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <i class="icono bi bi-ticket-perforated fs-2"></i>
+                      <div>
+                        <h5 class="fw-bold mb-0">Entradas desde $15.000</h5>
+                        <p class="mb-0">Early Bird hasta el 31/10</p>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="d-flex flex-wrap gap-2">
-                      <a
-                        class="btn-rojo btn rounded-pill"
-                        href="./pages/Error404.html"
-                        >Presencial</a
-                      >
-                      <a
-                        class="btn-rojo btn rounded-pill"
-                        href="./pages/Error404.html"
-                        >Virtual</a
-                      >
-                      <a
-                        class="btn-rojo btn rounded-pill"
-                        href="./pages/Error404.html"
-                        >Cupos limitados</a
-                      >
-                    </div>
+                  <div class="d-flex flex-wrap gap-2">
+                    <a class="btn-rojo btn rounded-pill" href="./pages/Error404.html">Presencial</a>
+                    <a class="btn-rojo btn rounded-pill" href="./pages/Error404.html">Virtual</a>
+                    <a class="btn-rojo btn rounded-pill" href="./pages/Error404.html">Cupos limitados</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="card border-0 rounded-4 card-negra mt-4 mx-3 mx-md-5">
-          <div class="card-body p-4">
-            <div
-              class="datos-extra row row-cols-2 row-cols-md-4 g-4 text-start align-items-start"
-            >
-              <div class="col">
-                <h4 class="card-title fw-bold fs-2 mb-1">120</h4>
-                <p class="card-subtitle mt-0 mb-0">lugares presenciales</p>
-              </div>
+      <div class="card border-0 rounded-4 card-negra mt-4 mx-3 mx-md-5">
+        <div class="card-body p-4">
+          <div class="datos-extra row row-cols-2 row-cols-md-4 g-4 text-start align-items-start">
+            <div class="col">
+              <h4 class="card-title fw-bold fs-2 mb-1">120</h4>
+              <p class="card-subtitle mt-0 mb-0">lugares presenciales</p>
+            </div>
 
-              <div class="col">
-                <h4 class="card-title fw-bold fs-2 mb-1">10</h4>
-                <p class="card-subtitle mt-0 mb-0">charlas de speakers</p>
-              </div>
+            <div class="col">
+              <h4 class="card-title fw-bold fs-2 mb-1">10</h4>
+              <p class="card-subtitle mt-0 mb-0">charlas de speakers</p>
+            </div>
 
-              <div class="col">
-                <h4 class="card-title fw-bold fs-2 mb-1">3 h 40</h4>
-                <p class="card-subtitle mt-0 mb-0">de 18:00 a 21:40 hs</p>
-              </div>
+            <div class="col">
+              <h4 class="card-title fw-bold fs-2 mb-1">3 h 40</h4>
+              <p class="card-subtitle mt-0 mb-0">de 18:00 a 21:40 hs</p>
+            </div>
 
-              <div class="col">
-                <h4 class="card-title fw-bold fs-2 mb-1">2</h4>
-                <p class="card-subtitle mt-0 mb-0">
-                  modalidades: presencial <br class="d-none d-md-block" />y
-                  virtual
-                </p>
-              </div>
+            <div class="col">
+              <h4 class="card-title fw-bold fs-2 mb-1">2</h4>
+              <p class="card-subtitle mt-0 mb-0">
+                modalidades: presencial <br class="d-none d-md-block" />y
+                virtual
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      <!-- FIN HERO -->
+      </div>
+    </section>
+    <!-- FIN HERO -->
+    <!-- SPEAKERS -->
+    <article class="container my-5" id="speaker">
+      <div class="mb-4">
+        <small class="p-random fw-bold d-block">Speakers</small>
+        <h2 class="fw-bold">Diez charlas, un mismo objetivo</h2>
+      </div>
+      <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 justify-content-center d-none d-sm-flex">
+        <!-- SPEAKER 1 -->
+        <div class="col">
+          <section class="card speaker text-white rounded-4 p-3 h-100">
+            <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
+              <img src="./img/Gemini_Generated_Image_bb84nnbb84nnbb84.jpg" class="object-fit-cover w-100 h-100"
+                alt="Foto de Tomas Escudero" />
+            </div>
 
-      <!-- SPEAKERS -->
-      <article class="container my-5" id="speaker">
-        <div class="mb-4">
-          <small class="p-random fw-bold d-block">Speakers</small>
-          <h2 class="fw-bold">Diez charlas, un mismo objetivo</h2>
+            <div class="card-body p-0 d-flex flex-column">
+              <h4 class="card-title fw-bold h5">Tomas Escudero</h4>
+              <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
+                Diseño para developers
+              </a>
+              <p class="card-text speaker-texto small mb-0">
+                Qué mira un equipo de diseño antes de que escribas código y cómo leer un mockup para construirlo igual.
+              </p>
+            </div>
+          </section>
         </div>
 
-        <div
-          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 justify-content-center"
-        >
+        <!-- SPEAKER 2 -->
+        <div class="col">
+          <section class="card speaker text-white rounded-4 p-3 h-100">
+            <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
+              <img src="./img/speaker2.jpg" class="object-fit-cover w-100 h-100" alt="Foto de Franco Diaz" />
+            </div>
+
+            <div class="card-body p-0 d-flex flex-column">
+              <h4 class="card-title fw-bold h5">Franco Diaz</h4>
+              <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
+                De cero a tu primer proyecto
+              </a>
+              <p class="card-text speaker-texto small mb-0">
+                Un recorrido para pasar de mirar tutoriales a terminar una app simple con HTML, JavaScript y React.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <!-- SPEAKER 3 -->
+        <div class="col">
+          <section class="card speaker text-white rounded-4 p-3 h-100">
+            <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
+              <img src="./img/3.jpg" class="object-fit-cover w-100 h-100" alt="Foto de Gaston" />
+            </div>
+
+            <div class="card-body p-0 d-flex flex-column">
+              <h4 class="card-title fw-bold h5">Gaston Roger</h4>
+              <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
+                Armá tu portfolio con IA
+              </a>
+              <p class="card-text speaker-texto small mb-0">
+                Los comandos que vas a usar todos los días y cómo trabajar en equipo sin pisar el código de otros.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <!-- SPEAKER 4 -->
+        <div class="col">
+          <section class="card speaker text-white rounded-4 p-3 h-100">
+            <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
+              <img src="./img/4.jpg" class="object-fit-cover w-100 h-100" alt="Foto de Mauro" />
+            </div>
+
+            <div class="card-body p-0 d-flex flex-column">
+              <h4 class="card-title fw-bold h5">Mauro Coniglio</h4>
+              <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
+                Git y GitHub sin miedo
+              </a>
+              <p class="card-text speaker-texto small mb-0">
+                Los comandos que vas a usar todos los días y cómo trabajar en equipo sin pisar el código de otros.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <!-- SPEAKER 5 -->
+        <div class="col">
+          <section class="card speaker text-white rounded-4 p-3 h-100">
+            <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
+              <img src="./img/speaker3.jpg" class="object-fit-cover w-100 h-100" alt="Foto de Jose Diaz" />
+            </div>
+
+            <div class="card-body p-0 d-flex flex-column">
+              <h4 class="card-title fw-bold h5">Jose Diaz</h4>
+              <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
+                Tu primer backend con Node
+              </a>
+              <p class="card-text speaker-texto small mb-0">
+                Cómo se arma una API, qué hace una base de datos y por dónde empezar para conectar todo.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <!-- SPEAKER 6 -->
+        <div class="col">
+          <section class="card speaker text-white rounded-4 p-3 h-100">
+            <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
+              <img src="./img/WhatsApp Image 2026-10-26 at 10.12.19 PM.jpeg" class="object-fit-cover w-100 h-100"
+                alt="Foto de Tomas Gomez" />
+            </div>
+
+            <div class="card-body p-0 d-flex flex-column">
+              <h4 class="card-title fw-bold h5">Tomas Gomez</h4>
+              <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
+                Preparate para tu primera entrevista
+              </a>
+              <p class="card-text speaker-texto small mb-0">
+                Qué preguntan en una entrevista técnica, cómo practicar y cómo contar tus proyectos con claridad.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <!-- SPEAKER 7 -->
+        <div class="col">
+          <section class="card speaker text-white rounded-4 p-3 h-100">
+            <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
+              <img src="./img/speaker5.jpg" class="object-fit-cover w-100 h-100" alt="Foto de Pablo Basso" />
+            </div>
+
+            <div class="card-body p-0 d-flex flex-column">
+              <h4 class="card-title fw-bold h5">Pablo Basso</h4>
+              <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
+                Mi primer trabajo en IT
+              </a>
+              <p class="card-text speaker-texto small mb-0">
+                Una charla en primera persona sobre cómo se consigue el primer puesto y qué se aprende en los primeros
+                meses.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <!-- SPEAKER 8 -->
+        <div class="col">
+          <section class="card speaker text-white rounded-4 p-3 h-100">
+            <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
+              <img src="./img/8.jpg" class="object-fit-cover w-100 h-100" alt="Foto de Julian Martin" />
+            </div>
+
+            <div class="card-body p-0 d-flex flex-column">
+              <h4 class="card-title fw-bold h5">Julian Martin</h4>
+              <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
+                Cómo no romper todo
+              </a>
+              <p class="card-text speaker-texto small mb-0">
+                Qué es testear, por qué importa y cómo escribir tus primeras pruebas sin complicarte.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <!-- SPEAKER 9 -->
+        <div class="col">
+          <section class="card speaker text-white rounded-4 p-3 h-100">
+            <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
+              <img src="./img/speaker1.jpg" class="object-fit-cover w-100 h-100" alt="Foto de Daniela Cardozo" />
+            </div>
+
+            <div class="card-body p-0 d-flex flex-column">
+              <h4 class="card-title fw-bold h5">Daniela Cardozo</h4>
+              <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
+                Tu primer día como developer
+              </a>
+              <p class="card-text speaker-texto small mb-0">
+                Qué esperar de tu primera semana en un equipo, qué herramientas usar y cómo pedir ayuda sin miedo.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <!-- SPEAKER 10 -->
+        <div class="col">
+          <section class="card speaker text-white rounded-4 p-3 h-100">
+            <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
+              <img src="./img/speaker Andrés Perlo (1).jpeg" class="object-fit-cover w-100 h-100"
+                alt="Foto de Andres Perlo" />
+            </div>
+
+            <div class="card-body p-0 d-flex flex-column">
+              <h4 class="card-title fw-bold h5">Andres Perlo</h4>
+              <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
+                Tu primera base de datos
+              </a>
+              <p class="card-text speaker-texto small mb-0">
+                Qué es una base de datos, para qué sirve y cómo guardar y consultar tus primeros datos.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- CELULAR: carrusel de Bootstrap que pasa solo (se oculta desde tablet) -->
+      <div id="speakersCarousel" class="carousel slide speakers-carousel d-sm-none" data-bs-ride="carousel"
+        data-bs-interval="3500">
+        <div class="carousel-inner">
           <!-- SPEAKER 1 -->
-          <div class="col">
+          <div class="carousel-item active">
             <section class="card speaker text-white rounded-4 p-3 h-100">
               <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
-                <img
-                  src="./img/Gemini_Generated_Image_bb84nnbb84nnbb84.jpg"
-                  class="object-fit-cover w-100 h-100"
-                  alt="Foto de Tomas Escudero"
-                />
+                <img src="./img/Gemini_Generated_Image_bb84nnbb84nnbb84.jpg" class="object-fit-cover w-100 h-100"
+                  alt="Foto de Tomas Escudero" />
               </div>
 
               <div class="card-body p-0 d-flex flex-column">
                 <h4 class="card-title fw-bold h5">Tomas Escudero</h4>
-                <a
-                  href="./pages/Error404.html"
-                  class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2"
-                >
+                <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
                   Diseño para developers
                 </a>
                 <p class="card-text speaker-texto small mb-0">
-                  Qué mira un equipo de diseño antes de que escribas código y
-                  cómo leer un mockup para construirlo igual.
+                  Qué mira un equipo de diseño antes de que escribas código y cómo leer un mockup para construirlo
+                  igual.
                 </p>
               </div>
             </section>
           </div>
 
           <!-- SPEAKER 2 -->
-          <div class="col">
+          <div class="carousel-item">
             <section class="card speaker text-white rounded-4 p-3 h-100">
               <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
-                <img
-                  src="./img/speaker2.jpg"
-                  class="object-fit-cover w-100 h-100"
-                  alt="Foto de Franco Diaz"
-                />
+                <img src="./img/speaker2.jpg" class="object-fit-cover w-100 h-100" alt="Foto de Franco Diaz" />
               </div>
 
               <div class="card-body p-0 d-flex flex-column">
                 <h4 class="card-title fw-bold h5">Franco Diaz</h4>
-                <a
-                  href="./pages/Error404.html"
-                  class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2"
-                >
+                <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
                   De cero a tu primer proyecto
                 </a>
                 <p class="card-text speaker-texto small mb-0">
-                  Un recorrido para pasar de mirar tutoriales a terminar una app
-                  simple con HTML, JavaScript y React.
+                  Un recorrido para pasar de mirar tutoriales a terminar una app simple con HTML, JavaScript y React.
                 </p>
               </div>
             </section>
           </div>
 
           <!-- SPEAKER 3 -->
-          <div class="col">
+          <div class="carousel-item">
             <section class="card speaker text-white rounded-4 p-3 h-100">
               <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
-                <img
-                  src="./img/3.jpg"
-                  class="object-fit-cover w-100 h-100"
-                  alt="Foto de Gaston"
-                />
+                <img src="./img/3.jpg" class="object-fit-cover w-100 h-100" alt="Foto de Gaston" />
               </div>
 
               <div class="card-body p-0 d-flex flex-column">
                 <h4 class="card-title fw-bold h5">Gaston Roger</h4>
-                <a
-                  href="./pages/Error404.html"
-                  class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2"
-                >
+                <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
                   Armá tu portfolio con IA
                 </a>
                 <p class="card-text speaker-texto small mb-0">
-                  Los comandos que vas a usar todos los días y cómo trabajar en
-                  equipo sin pisar el código de otros.
+                  Los comandos que vas a usar todos los días y cómo trabajar en equipo sin pisar el código de otros.
                 </p>
               </div>
             </section>
           </div>
 
           <!-- SPEAKER 4 -->
-          <div class="col">
+          <div class="carousel-item">
             <section class="card speaker text-white rounded-4 p-3 h-100">
               <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
-                <img
-                  src="./img/4.jpg"
-                  class="object-fit-cover w-100 h-100"
-                  alt="Foto de Mauro"
-                />
+                <img src="./img/4.jpg" class="object-fit-cover w-100 h-100" alt="Foto de Mauro" />
               </div>
 
               <div class="card-body p-0 d-flex flex-column">
                 <h4 class="card-title fw-bold h5">Mauro Coniglio</h4>
-                <a
-                  href="./pages/Error404.html"
-                  class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2"
-                >
+                <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
                   Git y GitHub sin miedo
                 </a>
                 <p class="card-text speaker-texto small mb-0">
-                  Los comandos que vas a usar todos los días y cómo trabajar en
-                  equipo sin pisar el código de otros.
+                  Los comandos que vas a usar todos los días y cómo trabajar en equipo sin pisar el código de otros.
                 </p>
               </div>
             </section>
           </div>
 
           <!-- SPEAKER 5 -->
-          <div class="col">
+          <div class="carousel-item">
             <section class="card speaker text-white rounded-4 p-3 h-100">
               <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
-                <img
-                  src="./img/speaker3.jpg"
-                  class="object-fit-cover w-100 h-100"
-                  alt="Foto de Jose Diaz"
-                />
+                <img src="./img/speaker3.jpg" class="object-fit-cover w-100 h-100" alt="Foto de Jose Diaz" />
               </div>
 
               <div class="card-body p-0 d-flex flex-column">
                 <h4 class="card-title fw-bold h5">Jose Diaz</h4>
-                <a
-                  href="./pages/Error404.html"
-                  class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2"
-                >
+                <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
                   Tu primer backend con Node
                 </a>
                 <p class="card-text speaker-texto small mb-0">
-                  Cómo se arma una API, qué hace una base de datos y por dónde
-                  empezar para conectar todo.
+                  Cómo se arma una API, qué hace una base de datos y por dónde empezar para conectar todo.
                 </p>
               </div>
             </section>
           </div>
 
           <!-- SPEAKER 6 -->
-          <div class="col">
+          <div class="carousel-item">
             <section class="card speaker text-white rounded-4 p-3 h-100">
               <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
-                <img
-                  src="./img/WhatsApp Image 2026-10-26 at 10.12.19 PM.jpeg"
-                  class="object-fit-cover w-100 h-100"
-                  alt="Foto de Tomas Gomez"
-                />
+                <img src="./img/WhatsApp Image 2026-10-26 at 10.12.19 PM.jpeg" class="object-fit-cover w-100 h-100"
+                  alt="Foto de Tomas Gomez" />
               </div>
 
               <div class="card-body p-0 d-flex flex-column">
                 <h4 class="card-title fw-bold h5">Tomas Gomez</h4>
-                <a
-                  href="./pages/Error404.html"
-                  class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2"
-                >
+                <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
                   Preparate para tu primera entrevista
                 </a>
                 <p class="card-text speaker-texto small mb-0">
-                  Qué preguntan en una entrevista técnica, cómo practicar y cómo
-                  contar tus proyectos con claridad.
+                  Qué preguntan en una entrevista técnica, cómo practicar y cómo contar tus proyectos con claridad.
                 </p>
               </div>
             </section>
           </div>
 
           <!-- SPEAKER 7 -->
-          <div class="col">
+          <div class="carousel-item">
             <section class="card speaker text-white rounded-4 p-3 h-100">
               <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
-                <img
-                  src="./img/speaker5.jpg"
-                  class="object-fit-cover w-100 h-100"
-                  alt="Foto de Pablo Basso"
-                />
+                <img src="./img/speaker5.jpg" class="object-fit-cover w-100 h-100" alt="Foto de Pablo Basso" />
               </div>
 
               <div class="card-body p-0 d-flex flex-column">
                 <h4 class="card-title fw-bold h5">Pablo Basso</h4>
-                <a
-                  href="./pages/Error404.html"
-                  class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2"
-                >
+                <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
                   Mi primer trabajo en IT
                 </a>
                 <p class="card-text speaker-texto small mb-0">
-                  Una charla en primera persona sobre cómo se consigue el primer
-                  puesto y qué se aprende en los primeros meses.
+                  Una charla en primera persona sobre cómo se consigue el primer puesto y qué se aprende en los primeros
+                  meses.
                 </p>
               </div>
             </section>
           </div>
 
           <!-- SPEAKER 8 -->
-          <div class="col">
+          <div class="carousel-item">
             <section class="card speaker text-white rounded-4 p-3 h-100">
               <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
-                <img
-                  src="./img/8.jpg"
-                  class="object-fit-cover w-100 h-100"
-                  alt="Foto de Julian Martin"
-                />
+                <img src="./img/8.jpg" class="object-fit-cover w-100 h-100" alt="Foto de Julian Martin" />
               </div>
 
               <div class="card-body p-0 d-flex flex-column">
                 <h4 class="card-title fw-bold h5">Julian Martin</h4>
-                <a
-                  href="./pages/Error404.html"
-                  class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2"
-                >
+                <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
                   Cómo no romper todo
                 </a>
                 <p class="card-text speaker-texto small mb-0">
-                  Qué es testear, por qué importa y cómo escribir tus primeras
-                  pruebas sin complicarte.
+                  Qué es testear, por qué importa y cómo escribir tus primeras pruebas sin complicarte.
                 </p>
               </div>
             </section>
           </div>
 
           <!-- SPEAKER 9 -->
-          <div class="col">
+          <div class="carousel-item">
             <section class="card speaker text-white rounded-4 p-3 h-100">
               <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
-                <img
-                  src="./img/speaker1.jpg"
-                  class="object-fit-cover w-100 h-100"
-                  alt="Foto de Daniela Cardozo"
-                />
+                <img src="./img/speaker1.jpg" class="object-fit-cover w-100 h-100" alt="Foto de Daniela Cardozo" />
               </div>
 
               <div class="card-body p-0 d-flex flex-column">
                 <h4 class="card-title fw-bold h5">Daniela Cardozo</h4>
-                <a
-                  href="./pages/Error404.html"
-                  class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2"
-                >
+                <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
                   Tu primer día como developer
                 </a>
                 <p class="card-text speaker-texto small mb-0">
-                  Qué esperar de tu primera semana en un equipo, qué
-                  herramientas usar y cómo pedir ayuda sin miedo.
+                  Qué esperar de tu primera semana en un equipo, qué herramientas usar y cómo pedir ayuda sin miedo.
                 </p>
               </div>
             </section>
           </div>
 
           <!-- SPEAKER 10 -->
-          <div class="col">
+          <div class="carousel-item">
             <section class="card speaker text-white rounded-4 p-3 h-100">
               <div class="ratio ratio-1x1 overflow-hidden rounded-4 mb-3">
-                <img
-                  src="./img/speaker Andrés Perlo (1).jpeg"
-                  class="object-fit-cover w-100 h-100"
-                  alt="Foto de Andres Perlo"
-                />
+                <img src="./img/speaker Andrés Perlo (1).jpeg" class="object-fit-cover w-100 h-100"
+                  alt="Foto de Andres Perlo" />
               </div>
 
               <div class="card-body p-0 d-flex flex-column">
                 <h4 class="card-title fw-bold h5">Andres Perlo</h4>
-                <a
-                  href="./pages/Error404.html"
-                  class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2"
-                >
+                <a href="./pages/Error404.html" class="btn btn-speaker text-start fw-bold fs-6 rounded-3 mb-2">
                   Tu primera base de datos
                 </a>
                 <p class="card-text speaker-texto small mb-0">
-                  Qué es una base de datos, para qué sirve y cómo guardar y
-                  consultar tus primeros datos.
+                  Qué es una base de datos, para qué sirve y cómo guardar y consultar tus primeros datos.
                 </p>
               </div>
             </section>
           </div>
         </div>
-      </article>
-      <!-- FIN SPEAKERS -->
 
-      <!-- AGENDA -->
-      <section class="agenda" id="agenda">
-        <div class="container">
-          <div class="row gy-5 gx-lg-5">
-            <div class="col-lg-5">
-              <p class="agenda__etiqueta mb-3">Agenda</p>
-              <h2 class="agenda__titulo mb-4 fw-bold">
-                Jueves 19 de Noviembre
-              </h2>
-              <p class="agenda__texto mb-0">
-                Diez charlas cortas para salir con un plan claro. Al final queda
-                tiempo para preguntas y networking.
-              </p>
-            </div>
-
-            <div class="col-lg-7">
-              <ol class="agenda__lista list-unstyled m-0 p-0">
-                <li class="agenda__item d-flex align-items-center gap-4 py-3">
-                  <span class="agenda__hora">18:00</span>
-                  <div>
-                    <h3 class="agenda__charla m-0">
-                      Acreditación y bienvenida
-                    </h3>
-                  </div>
-                </li>
-
-                <li class="agenda__item d-flex align-items-center gap-4 py-3">
-                  <span class="agenda__hora">18:20</span>
-                  <div>
-                    <h3 class="agenda__charla m-0">
-                      Tu primer día como developer
-                    </h3>
-                    <p class="agenda__speaker m-0 mt-1">Daniela Cardozo</p>
-                  </div>
-                </li>
-
-                <li class="agenda__item d-flex align-items-center gap-4 py-3">
-                  <span class="agenda__hora">18:40</span>
-                  <div>
-                    <h3 class="agenda__charla m-0">
-                      De cero a tu primer proyecto
-                    </h3>
-                    <p class="agenda__speaker m-0 mt-1">Franco Diaz</p>
-                  </div>
-                </li>
-
-                <li class="agenda__item d-flex align-items-center gap-4 py-3">
-                  <span class="agenda__hora">19:00</span>
-                  <div>
-                    <h3 class="agenda__charla m-0">
-                      Armá tu portafolio con IA
-                    </h3>
-                    <p class="agenda__speaker m-0 mt-1">Gaston</p>
-                  </div>
-                </li>
-
-                <li class="agenda__item d-flex align-items-center gap-4 py-3">
-                  <span class="agenda__hora">19:20</span>
-                  <div>
-                    <h3 class="agenda__charla m-0">Git y GitHub sin miedo</h3>
-                    <p class="agenda__speaker m-0 mt-1">Mauro</p>
-                  </div>
-                </li>
-
-                <li class="agenda__item d-flex align-items-center gap-4 py-3">
-                  <span class="agenda__hora">19:40</span>
-                  <div>
-                    <h3 class="agenda__charla m-0">
-                      Tu primer backend con Node
-                    </h3>
-                    <p class="agenda__speaker m-0 mt-1">Jose Diaz</p>
-                  </div>
-                </li>
-
-                <li class="agenda__item d-flex align-items-center gap-4 py-3">
-                  <span class="agenda__hora">20:00</span>
-                  <div>
-                    <h3 class="agenda__charla m-0">
-                      Preparáte para tu primera entrevista
-                    </h3>
-                    <p class="agenda__speaker m-0 mt-1">Tomas Gomez</p>
-                  </div>
-                </li>
-
-                <li class="agenda__item d-flex align-items-center gap-4 py-3">
-                  <span class="agenda__hora">20:20</span>
-                  <div>
-                    <h3 class="agenda__charla m-0">Mi primer trabajo en IT</h3>
-                    <p class="agenda__speaker m-0 mt-1">Pablo Basso</p>
-                  </div>
-                </li>
-
-                <li class="agenda__item d-flex align-items-center gap-4 py-3">
-                  <span class="agenda__hora">20:40</span>
-                  <div>
-                    <h3 class="agenda__charla m-0">
-                      Testing: cómo no romper todo
-                    </h3>
-                    <p class="agenda__speaker m-0 mt-1">Julian Martin</p>
-                  </div>
-                </li>
-
-                <li class="agenda__item d-flex align-items-center gap-4 py-3">
-                  <span class="agenda__hora">21:00</span>
-                  <div>
-                    <h3 class="agenda__charla m-0">Diseño para developer</h3>
-                    <p class="agenda__speaker m-0 mt-1">Tomas Escudero</p>
-                  </div>
-                </li>
-
-                <li class="agenda__item d-flex align-items-center gap-4 py-3">
-                  <span class="agenda__hora">21:20</span>
-                  <div>
-                    <h3 class="agenda__charla m-0">Tu primera base de datos</h3>
-                    <p class="agenda__speaker m-0 mt-1">Andres Perlo</p>
-                  </div>
-                </li>
-
-                <li class="agenda__item d-flex align-items-center gap-4 py-3">
-                  <span class="agenda__hora">21:40</span>
-                  <div>
-                    <h3 class="agenda__charla m-0">Preguntas y networking</h3>
-                  </div>
-                </li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- FIN AGENDA -->
-
-      <section class="container-fluid sponsors-section py-5" id="sponsors">
-        <div class="mb-5">
-          <header class="sponsor-tier-heading mb-3">
-            <div class="d-flex flex-wrap align-items-center gap-2">
-              <h2 class="text-uppercase fw-bold mb-0 sponsor-tier-title">
-                Main Partners
-              </h2>
-              <span class="sponsor-tier-badge">Tier Diamante</span>
-            </div>
-
-            <p class="sponsor-tier-description mb-0">
-              Presencia estelar en conferencias, stands experienciales y becas
-              formativas
-            </p>
-          </header>
-
-          <div class="row g-3 g-lg-4">
-            <div class="col-12 col-md-6 col-xl-4">
-              <a
-                href="https://cloud.google.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="sponsor-card sponsor-diamond d-flex flex-column h-100 p-3 p-lg-4 rounded-4 text-decoration-none"
-              >
-                <div
-                  class="d-flex justify-content-between align-items-center mb-3"
-                >
-                  <span class="sponsor-category">Lead Cloud Partner</span>
-                  <span class="sponsor-external" aria-hidden="true">↗</span>
-                </div>
-
-                <div
-                  class="sponsor-logo-box d-flex align-items-center justify-content-center mx-auto mb-3"
-                >
-                  <img
-                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Google_Cloud_icon_(2026).svg"
-                    alt="Logo de Google Cloud"
-                    class="sponsor-logo"
-                  />
-                </div>
-
-                <h3 class="text-center fw-bold sponsor-name mb-2">
-                  Google Cloud
-                </h3>
-
-                <p class="sponsor-description text-center mb-3">
-                  Infraestructura global ultra-escalable, Gemini AI APIs y
-                  programas de formación profesional para desarrolladores.
-                </p>
-
-                <div
-                  class="sponsor-card-footer d-flex justify-content-between align-items-center gap-2 mt-auto pt-3"
-                >
-                  <span class="sponsor-sector">◉ Cloud &amp; AI</span>
-                  <span class="sponsor-status">100% Verified</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-xl-4">
-              <a
-                href="https://aws.amazon.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="sponsor-card sponsor-diamond sponsor-aws d-flex flex-column h-100 p-3 p-lg-4 rounded-4 text-decoration-none"
-              >
-                <div
-                  class="d-flex justify-content-between align-items-center mb-3"
-                >
-                  <span class="sponsor-category">Infrastructure Partner</span>
-                  <span class="sponsor-external" aria-hidden="true">↗</span>
-                </div>
-
-                <div
-                  class="sponsor-logo-box d-flex align-items-center justify-content-center mx-auto mb-3"
-                >
-                  <img
-                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Amazon_Web_Services_2025.svg"
-                    alt="Logo de Amazon Web Services"
-                    class="sponsor-logo"
-                  />
-                </div>
-
-                <h3 class="text-center fw-bold sponsor-name mb-2">
-                  Amazon Web Services
-                </h3>
-
-                <p class="sponsor-description text-center mb-3">
-                  Servicios de nube, arquitecturas serverless y vouchers para
-                  certificaciones oficiales para la comunidad.
-                </p>
-
-                <div
-                  class="sponsor-card-footer d-flex justify-content-between align-items-center gap-2 mt-auto pt-3"
-                >
-                  <span class="sponsor-sector">▤ Cloud Hosting</span>
-                  <span class="sponsor-status">Global Leader</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-6 col-xl-4">
-              <a
-                href="https://www.mercadolibre.com.ar/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="sponsor-card sponsor-diamond sponsor-mercadolibre d-flex flex-column h-100 p-3 p-lg-4 rounded-4 text-decoration-none"
-              >
-                <div
-                  class="d-flex justify-content-between align-items-center mb-3"
-                >
-                  <span class="sponsor-category">Fintech &amp; E-commerce</span>
-                  <span class="sponsor-external" aria-hidden="true">↗</span>
-                </div>
-
-                <div
-                  class="sponsor-logo-box d-flex align-items-center justify-content-center mx-auto mb-3"
-                >
-                  <img
-                    src="https://raw.githubusercontent.com/Aerolab/silicon-baires/main/assets/logos/ml_iso.svg"
-                    alt="Isotipo de Mercado Libre"
-                    class="sponsor-logo"
-                  />
-                </div>
-
-                <h3 class="text-center fw-bold sponsor-name mb-2">
-                  Mercado Libre
-                </h3>
-
-                <p class="sponsor-description text-center mb-3">
-                  El mayor ecosistema tech de Latinoamérica, impulsando becas,
-                  hackathons y pasantías directas de empleo.
-                </p>
-
-                <div
-                  class="sponsor-card-footer d-flex justify-content-between align-items-center gap-2 mt-auto pt-3"
-                >
-                  <span class="sponsor-sector">▤ Fintech Scale</span>
-                  <span class="sponsor-status">Unicorn LATAM</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-5">
-          <header class="sponsor-tier-heading mb-3">
-            <div class="d-flex flex-wrap align-items-center gap-2">
-              <h2
-                class="text-uppercase fw-bold mb-0 sponsor-tier-title sponsor-gold-text"
-              >
-                Gold Tier
-              </h2>
-              <span class="sponsor-tier-badge sponsor-gold-badge"
-                >Nivel Oro</span
-              >
-            </div>
-
-            <p class="sponsor-tier-description mb-0">
-              Líderes de producto, frameworks y transformación digital global
-            </p>
-          </header>
-
-          <div class="row g-3">
-            <div class="col-6 col-md-4 col-xl">
-              <a
-                href="https://www.microsoft.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="sponsor-card sponsor-gold d-flex flex-column align-items-center h-100 p-3 rounded-4 text-decoration-none"
-              >
-                <div
-                  class="sponsor-logo-box sponsor-logo-small d-flex align-items-center justify-content-center mb-2"
-                >
-                  <img
-                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Microsoft_icon.svg"
-                    alt="Símbolo de Microsoft"
-                    class="sponsor-logo"
-                  />
-                </div>
-                <h3 class="sponsor-name fw-bold text-center mb-1">Microsoft</h3>
-                <p class="sponsor-description text-center mb-2">
-                  Azure &amp; Dev Tools
-                </p>
-                <span class="sponsor-category">Enterprise</span>
-              </a>
-            </div>
-
-            <div class="col-6 col-md-4 col-xl">
-              <a
-                href="https://github.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="sponsor-card sponsor-gold d-flex flex-column align-items-center h-100 p-3 rounded-4 text-decoration-none"
-              >
-                <div
-                  class="sponsor-logo-box sponsor-logo-small d-flex align-items-center justify-content-center mb-2"
-                >
-                  <img
-                    src="https://cdn.simpleicons.org/github/FFFFFF"
-                    alt="Logo de GitHub"
-                    class="sponsor-logo"
-                  />
-                </div>
-                <h3 class="sponsor-name fw-bold text-center mb-1">GitHub</h3>
-                <p class="sponsor-description text-center mb-2">
-                  Open Source &amp; Copilot
-                </p>
-                <span class="sponsor-category">Community</span>
-              </a>
-            </div>
-
-            <div class="col-6 col-md-4 col-xl">
-              <a
-                href="https://www.globant.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="sponsor-card sponsor-gold d-flex flex-column align-items-center h-100 p-3 rounded-4 text-decoration-none"
-              >
-                <div
-                  class="sponsor-logo-box sponsor-logo-small d-flex align-items-center justify-content-center mb-2"
-                >
-                  <img
-                    src="https://cdn.simpleicons.org/google/FFFFFF"
-                    alt="Logo ilustrativo de Globant"
-                    class="sponsor-logo"
-                  />
-                </div>
-                <h3 class="sponsor-name fw-bold text-center mb-1">Globant</h3>
-                <p class="sponsor-description text-center mb-2">
-                  Tech Reinvention
-                </p>
-                <span class="sponsor-category">Global Talent</span>
-              </a>
-            </div>
-
-            <div class="col-6 col-md-4 col-xl">
-              <a
-                href="https://auth0.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="sponsor-card sponsor-gold d-flex flex-column align-items-center h-100 p-3 rounded-4 text-decoration-none"
-              >
-                <div
-                  class="sponsor-logo-box sponsor-logo-small d-flex align-items-center justify-content-center mb-2"
-                >
-                  <img
-                    src="https://cdn.simpleicons.org/auth0/EB5424"
-                    alt="Logo de Auth0"
-                    class="sponsor-logo"
-                  />
-                </div>
-                <h3 class="sponsor-name fw-bold text-center mb-1">Auth0</h3>
-                <p class="sponsor-description text-center mb-2">
-                  Identity &amp; Security
-                </p>
-                <span class="sponsor-category">Security</span>
-              </a>
-            </div>
-
-            <div class="col-6 col-md-4 col-xl">
-              <a
-                href="https://vercel.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="sponsor-card sponsor-gold d-flex flex-column align-items-center h-100 p-3 rounded-4 text-decoration-none"
-              >
-                <div
-                  class="sponsor-logo-box sponsor-logo-small d-flex align-items-center justify-content-center mb-2"
-                >
-                  <img
-                    src="https://cdn.simpleicons.org/vercel/FFFFFF"
-                    alt="Logo de Vercel"
-                    class="sponsor-logo"
-                  />
-                </div>
-                <h3 class="sponsor-name fw-bold text-center mb-1">Vercel</h3>
-                <p class="sponsor-description text-center mb-2">
-                  Frontend Cloud &amp; Next
-                </p>
-                <span class="sponsor-category">Deployment</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <header class="sponsor-tier-heading mb-3">
-            <div class="d-flex flex-wrap align-items-center gap-2">
-              <h2
-                class="text-uppercase fw-bold mb-0 sponsor-tier-title sponsor-bronze-text"
-              >
-                Bronze Tier
-              </h2>
-              <span class="sponsor-tier-badge sponsor-bronze-badge"
-                >Nivel Bronce</span
-              >
-            </div>
-
-            <p class="sponsor-tier-description mb-0">
-              Herramientas y plataformas predilectas de la comunidad de
-              desarrolladores
-            </p>
-          </header>
-
-          <div class="row g-2">
-            <div class="col-6 col-md-4 col-xl">
-              <a
-                href="https://supabase.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="sponsor-card sponsor-bronze d-flex flex-column align-items-center h-100 p-2 rounded-3 text-decoration-none"
-              >
-                <div
-                  class="sponsor-logo-box sponsor-logo-tiny d-flex align-items-center justify-content-center mb-2"
-                >
-                  <img
-                    src="https://cdn.simpleicons.org/supabase/3ECF8E"
-                    alt="Logo de Supabase"
-                    class="sponsor-logo"
-                  />
-                </div>
-                <h3 class="sponsor-name fw-bold text-center mb-1">Supabase</h3>
-                <p class="sponsor-description text-center mb-0">
-                  Open-source DB
-                </p>
-              </a>
-            </div>
-
-            <div class="col-6 col-md-4 col-xl">
-              <a
-                href="https://www.digitalocean.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="sponsor-card sponsor-bronze d-flex flex-column align-items-center h-100 p-2 rounded-3 text-decoration-none"
-              >
-                <div
-                  class="sponsor-logo-box sponsor-logo-tiny d-flex align-items-center justify-content-center mb-2"
-                >
-                  <img
-                    src="https://cdn.simpleicons.org/digitalocean/0080FF"
-                    alt="Logo de DigitalOcean"
-                    class="sponsor-logo"
-                  />
-                </div>
-                <h3 class="sponsor-name fw-bold text-center mb-1">
-                  DigitalOcean
-                </h3>
-                <p class="sponsor-description text-center mb-0">Cloud VPS</p>
-              </a>
-            </div>
-
-            <div class="col-6 col-md-4 col-xl">
-              <a
-                href="https://www.cloudflare.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="sponsor-card sponsor-bronze d-flex flex-column align-items-center h-100 p-2 rounded-3 text-decoration-none"
-              >
-                <div
-                  class="sponsor-logo-box sponsor-logo-tiny d-flex align-items-center justify-content-center mb-2"
-                >
-                  <img
-                    src="https://cdn.simpleicons.org/cloudflare/F38020"
-                    alt="Logo de Cloudflare"
-                    class="sponsor-logo"
-                  />
-                </div>
-                <h3 class="sponsor-name fw-bold text-center mb-1">
-                  Cloudflare
-                </h3>
-                <p class="sponsor-description text-center mb-0">
-                  Edge &amp; DNS
-                </p>
-              </a>
-            </div>
-
-            <div class="col-6 col-md-4 col-xl">
-              <a
-                href="https://www.mongodb.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="sponsor-card sponsor-bronze d-flex flex-column align-items-center h-100 p-2 rounded-3 text-decoration-none"
-              >
-                <div
-                  class="sponsor-logo-box sponsor-logo-tiny d-flex align-items-center justify-content-center mb-2"
-                >
-                  <img
-                    src="https://cdn.simpleicons.org/mongodb/47A248"
-                    alt="Logo de MongoDB"
-                    class="sponsor-logo"
-                  />
-                </div>
-                <h3 class="sponsor-name fw-bold text-center mb-1">MongoDB</h3>
-                <p class="sponsor-description text-center mb-0">Document DB</p>
-              </a>
-            </div>
-
-            <div class="col-6 col-md-4 col-xl">
-              <a
-                href="https://www.docker.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="sponsor-card sponsor-bronze d-flex flex-column align-items-center h-100 p-2 rounded-3 text-decoration-none"
-              >
-                <div
-                  class="sponsor-logo-box sponsor-logo-tiny d-flex align-items-center justify-content-center mb-2"
-                >
-                  <img
-                    src="https://cdn.simpleicons.org/docker/2496ED"
-                    alt="Logo de Docker"
-                    class="sponsor-logo"
-                  />
-                </div>
-                <h3 class="sponsor-name fw-bold text-center mb-1">Docker</h3>
-                <p class="sponsor-description text-center mb-0">Containers</p>
-              </a>
-            </div>
-
-            <div class="col-6 col-md-4 col-xl">
-              <a
-                href="https://stripe.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="sponsor-card sponsor-bronze d-flex flex-column align-items-center h-100 p-2 rounded-3 text-decoration-none"
-              >
-                <div
-                  class="sponsor-logo-box sponsor-logo-tiny d-flex align-items-center justify-content-center mb-2"
-                >
-                  <img
-                    src="https://cdn.simpleicons.org/stripe/635BFF"
-                    alt="Logo de Stripe"
-                    class="sponsor-logo"
-                  />
-                </div>
-                <h3 class="sponsor-name fw-bold text-center mb-1">Stripe</h3>
-                <p class="sponsor-description text-center mb-0">Payments API</p>
-              </a>
-            </div>
-
-            <div class="col-6 col-md-4 col-xl">
-              <a
-                href="https://www.postman.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="sponsor-card sponsor-bronze d-flex flex-column align-items-center h-100 p-2 rounded-3 text-decoration-none"
-              >
-                <div
-                  class="sponsor-logo-box sponsor-logo-tiny d-flex align-items-center justify-content-center mb-2"
-                >
-                  <img
-                    src="https://cdn.simpleicons.org/postman/FF6C37"
-                    alt="Logo de Postman"
-                    class="sponsor-logo"
-                  />
-                </div>
-                <h3 class="sponsor-name fw-bold text-center mb-1">Postman</h3>
-                <p class="sponsor-description text-center mb-0">API Platform</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PAGOS -->
-      <article class="container px-3 px-lg-4 py-4" id="pagos">
-        <section class="early-banner rounded-4 p-3 p-md-4 mb-4">
-          <div class="row align-items-center g-4">
-            <div class="col-12 col-lg-4">
-              <p class="early-label fw-bold mb-1">EARLY BIRD</p>
-              <h2 class="early-title fw-bold mb-2">
-                El precio especial termina el 31/10
-              </h2>
-              <p class="early-description mb-0">
-                Después la entrada pasa de $25.000 a $35.000.
-              </p>
-            </div>
-
-            <div class="col-12 col-lg-4">
-              <div class="d-flex justify-content-center gap-2 flex-wrap">
-                <div class="countdown-box text-center rounded-4 p-2">
-                  <span class="countdown-number" id="countdown-days">00</span>
-                  <span class="countdown-unit">DÍAS</span>
-                </div>
-
-                <div class="countdown-box text-center rounded-4 p-2">
-                  <span class="countdown-number" id="countdown-hours">00</span>
-                  <span class="countdown-unit">HORAS</span>
-                </div>
-
-                <div class="countdown-box text-center rounded-4 p-2">
-                  <span class="countdown-number" id="countdown-minutes"
-                    >00</span
-                  >
-                  <span class="countdown-unit">MIN</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-lg-4">
-              <div
-                class="d-flex justify-content-between align-items-center gap-2 mb-2"
-              >
-                <span class="early-progress-label"
-                  >Quedan 38 de 60 Early Bird</span
-                >
-                <span class="early-progress-percent">37% vendidas</span>
-              </div>
-
-              <div
-                class="progress early-progress"
-                role="progressbar"
-                aria-label="Entradas Early Bird vendidas"
-                aria-valuenow="22"
-                aria-valuemin="0"
-                aria-valuemax="60"
-              >
-                <div
-                  class="progress-bar early-progress-bar"
-                  style="width: 37%"
-                ></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="row g-3">
-          <!-- EARLY BIRD -->
-          <div class="col-12 col-lg-6">
-            <article class="card ticket-card h-100 rounded-4 p-3 p-lg-4">
-              <div
-                class="d-flex justify-content-between align-items-center mb-3"
-              >
-                <h2 class="h6 fw-bold mb-0 ticket-title">Early Bird</h2>
-                <span class="badge rounded-pill text-bg-dark">Quedan 38</span>
-              </div>
-
-              <div class="mb-3">
-                <p class="display-6 fw-bold mb-0 ticket-price">$25.000</p>
-                <del class="small ticket-muted">$35.000</del>
-              </div>
-
-              <p class="small mb-3 ticket-description">
-                Presencial · precio especial hasta el 31/10
-              </p>
-
-              <ul class="list-unstyled small mb-4">
-                <li class="mb-2">
-                  <span class="ticket-check me-2">✓</span
-                  ><span class="ticket-feature">Acceso a las 10 charlas</span>
-                </li>
-                <li class="mb-2">
-                  <span class="ticket-check me-2">✓</span
-                  ><span class="ticket-feature"
-                    >Kit de stickers Rolling Code</span
-                  >
-                </li>
-                <li class="mb-2">
-                  <span class="ticket-check me-2">✓</span
-                  ><span class="ticket-feature">Certificado de asistencia</span>
-                </li>
-                <li class="mb-2">
-                  <span class="ticket-check me-2">✓</span
-                  ><span class="ticket-feature"
-                    >Coffee break y networking con los speakers</span
-                  >
-                </li>
-                <li>
-                  <span class="ticket-check me-2">✓</span
-                  ><span class="ticket-feature"
-                    >Grabación de todas las charlas</span
-                  >
-                </li>
-              </ul>
-
-              <a
-                href="#entrada"
-                type="button"
-                class="btn rounded-pill fw-bold mt-auto ticket-button"
-              >
-                Comprar entrada
-              </a>
-            </article>
-          </div>
-
-          <!-- GENERAL -->
-          <div class="col-12 col-lg-6">
-            <article class="card ticket-card h-100 rounded-4 p-3 p-lg-4">
-              <div
-                class="d-flex justify-content-between align-items-center mb-3"
-              >
-                <h2 class="h6 fw-bold mb-0 ticket-title">General</h2>
-                <span
-                  class="badge rounded-pill border border-secondary fw-normal"
-                >
-                  Desde el 1/11
-                </span>
-              </div>
-
-              <div class="mb-3">
-                <p class="display-6 fw-bold mb-0 ticket-price">$35.000</p>
-              </div>
-
-              <p class="small mb-3 ticket-description">
-                Presencial · precio regular
-              </p>
-
-              <ul class="list-unstyled small mb-4">
-                <li class="mb-2">
-                  <span class="ticket-check me-2">✓</span
-                  ><span class="ticket-feature">Acceso a las 10 charlas</span>
-                </li>
-                <li class="mb-2">
-                  <span class="ticket-check me-2">✓</span
-                  ><span class="ticket-feature">Certificado de asistencia</span>
-                </li>
-                <li class="mb-2">
-                  <span class="ticket-check me-2">✓</span
-                  ><span class="ticket-feature"
-                    >Coffee break y networking con los speakers</span
-                  >
-                </li>
-                <li>
-                  <span class="ticket-check me-2">✓</span
-                  ><span class="ticket-feature"
-                    >Grabación de todas las charlas</span
-                  >
-                </li>
-              </ul>
-
-              <a
-                href="#entrada"
-                type="button"
-                class="btn rounded-pill fw-bold mt-auto ticket-button"
-              >
-                Comprar entrada
-              </a>
-            </article>
-          </div>
-
-          <!-- VIRTUAL -->
-          <div class="col-12">
-            <article class="card ticket-card h-100 rounded-4 p-3 p-lg-4">
-              <div
-                class="d-flex justify-content-between align-items-center mb-3"
-              >
-                <h2 class="h6 fw-bold mb-0 ticket-title">Virtual</h2>
-                <span
-                  class="badge rounded-pill border border-secondary fw-normal"
-                >
-                  Desde donde estés
-                </span>
-              </div>
-
-              <div class="mb-3">
-                <p class="display-6 fw-bold mb-0 ticket-price">$15.000</p>
-              </div>
-
-              <p class="small mb-3 ticket-description">Transmisión en vivo</p>
-
-              <ul class="list-unstyled small mb-4">
-                <li class="mb-2">
-                  <span class="ticket-check me-2">✓</span
-                  ><span class="ticket-feature"
-                    >Transmisión en vivo de las 10 charlas</span
-                  >
-                </li>
-                <li class="mb-2">
-                  <span class="ticket-check me-2">✓</span
-                  ><span class="ticket-feature"
-                    >Chat para hacer preguntas a los speakers</span
-                  >
-                </li>
-                <li class="mb-2">
-                  <span class="ticket-check me-2">✓</span
-                  ><span class="ticket-feature">Certificado de asistencia</span>
-                </li>
-                <li>
-                  <span class="ticket-check me-2">✓</span
-                  ><span class="ticket-feature"
-                    >Grabación disponible por 30 días</span
-                  >
-                </li>
-              </ul>
-
-              <a
-                href="#entrada"
-                type="button"
-                class="btn rounded-pill fw-bold mt-auto ticket-button"
-              >
-                Comprar entrada
-              </a>
-            </article>
-          </div>
-        </section>
-      </article>
-      <!-- FIN PAGOS -->
-
-      <!-- CHECKOUT DE EJEMPLO -->
-      <article class="container-fluid checkout-wrapper py-4 py-lg-5">
-        <section class="checkout-container p-3 p-md-4 p-xl-5">
-          <header class="mb-4">
-            <div class="row align-items-end g-4">
-              <div class="col-12 col-lg-7">
-                <p class="text-white fw-bold small mb-2 checkout-label">
-                  COMPRA SEGURA
-                </p>
-                <h2 class="text-white fw-bold mb-0 display-5">
-                  Finalizá tu compra
-                </h2>
-              </div>
-
-              <div class="col-12 col-lg-5">
-                <nav
-                  class="d-flex flex-wrap justify-content-lg-end gap-2"
-                  aria-label="Etapas de compra"
-                >
-                  <a
-                    href="#entrada"
-                    class="step-link rounded-pill px-3 py-2 small"
-                    >1 Entrada</a
-                  >
-                  <a
-                    href="#datos"
-                    class="step-link rounded-pill px-3 py-2 small"
-                    >2 Datos</a
-                  >
-                  <a href="#pago" class="step-link rounded-pill px-3 py-2 small"
-                    >3 Pago</a
-                  >
-                  <a
-                    href="#listo"
-                    class="step-link rounded-pill px-3 py-2 small"
-                    >4 Listo</a
-                  >
-                </nav>
-              </div>
-            </div>
-          </header>
-
-          <div class="row align-items-start g-4">
-            <div class="col-12 col-lg-7" id="entrada">
-              <section
-                class="ticket-selection bg-white text-black p-3 p-md-4 rounded-4"
-              >
-                <h3 class="fw-bold fs-5 mb-3">Elegí tu entrada</h3>
-
-                <div class="d-grid gap-2">
-                  <label
-                    class="ticket-option d-flex justify-content-between align-items-center gap-3 p-3 rounded-4"
-                  >
-                    <input
-                      type="radio"
-                      name="ticket"
-                      value="early"
-                      class="visually-hidden"
-                      checked
-                    />
-                    <span class="d-flex flex-column">
-                      <span class="ticket-name fw-bold">Early Bird</span>
-                      <span class="ticket-description small"
-                        >Presencial · hasta el 31/10</span
-                      >
-                    </span>
-                    <span class="ticket-price fw-bold text-nowrap"
-                      >$25.000</span
-                    >
-                  </label>
-
-                  <label
-                    class="ticket-option d-flex justify-content-between align-items-center gap-3 p-3 rounded-4"
-                  >
-                    <input
-                      type="radio"
-                      name="ticket"
-                      value="general"
-                      class="visually-hidden"
-                    />
-                    <span class="d-flex flex-column">
-                      <span class="ticket-name fw-bold">General</span>
-                      <span class="ticket-description small"
-                        >Presencial · desde el 1/11</span
-                      >
-                    </span>
-                    <span class="ticket-price fw-bold text-nowrap"
-                      >$35.000</span
-                    >
-                  </label>
-
-                  <label
-                    class="ticket-option d-flex justify-content-between align-items-center gap-3 p-3 rounded-4"
-                  >
-                    <input
-                      type="radio"
-                      name="ticket"
-                      value="virtual"
-                      class="visually-hidden"
-                    />
-                    <span class="d-flex flex-column">
-                      <span class="ticket-name fw-bold">Virtual</span>
-                      <span class="ticket-description small"
-                        >Transmisión en vivo y grabación</span
-                      >
-                    </span>
-                    <span class="ticket-price fw-bold text-nowrap"
-                      >$15.000</span
-                    >
-                  </label>
-                </div>
-
-                <div
-                  class="d-flex justify-content-between align-items-center mt-4 mb-3"
-                >
-                  <label for="quantity" class="fw-bold small">Cantidad</label>
-                  <div class="d-flex align-items-center gap-3">
-                    <button
-                      type="button"
-                      class="quantity-button"
-                      aria-label="Disminuir cantidad"
-                    >
-                      −
-                    </button>
-                    <span id="quantity" class="fw-bold fs-5">1</span>
-                    <button
-                      type="button"
-                      class="quantity-button"
-                      aria-label="Aumentar cantidad"
-                    >
-                      +
-                    </button>
-                  </div>
-                </div>
-
-                <a
-                  href="./pages/Error404.html"
-                  type="button"
-                  class="checkout-button w-100 text-center rounded-pill py-3 fw-bold"
-                >
-                  Continuar
-                </a>
-
-                <p class="text-secondary small mt-3 mb-0">
-                  Pasarela de pago de ejemplo: no se procesan pagos ni se
-                  guardan datos.
-                </p>
-              </section>
-            </div>
-
-            <aside class="col-12 col-lg-5">
-              <section
-                class="order-summary bg-black text-white rounded-4 p-3 p-md-4"
-              >
-                <p class="summary-label fw-bold small mb-3">TU PEDIDO</p>
-                <h3 class="fw-bold fs-5 mb-1">Workshop Rolling Code School</h3>
-                <p class="summary-description small mb-3">
-                  Jueves 19/11 · 18:00 hs · Gral. Paz 576
-                </p>
-
-                <hr />
-
-                <div class="d-flex justify-content-between gap-3 mb-3">
-                  <span class="summary-muted small">1 entrada Early Bird</span>
-                  <span class="summary-muted small text-nowrap">$25.000</span>
-                </div>
-
-                <div class="d-flex justify-content-between gap-3 mb-3">
-                  <span class="summary-muted small"
-                    >Cargo por servicio (5%)</span
-                  >
-                  <span class="summary-muted small text-nowrap">$1.250</span>
-                </div>
-
-                <hr />
-
-                <div
-                  class="d-flex justify-content-between align-items-center gap-3 mt-3"
-                >
-                  <span class="fw-bold">Total</span>
-                  <span class="summary-total fw-bold fs-2">$26.250</span>
-                </div>
-
-                <p class="summary-description small mt-3 mb-0">
-                  <span class="text-danger me-2">🔒</span>
-                  Pago protegido. Recibís la entrada por email.
-                </p>
-              </section>
-            </aside>
-          </div>
-        </section>
-      </article>
-      <!-- FIN CHECKOUT -->
-
-
-
-      <section class="container text-center">
-        <h1 class=" fw-bold mb-3">Sumate como Sponsor</h1>
-        <p class="mx-auto sp-l mb-4">
-          Conecta con mas de 120 talentos IT, programadores junior, semi-seniors
-          y lideres tecnologicos del norte argentino.Completa el formulario y
-          nos contactaremos en menos de 24 horas habiles
-        </p>
-      </section>
-      <section
-        class="border border-secondary container bg-dark text-white px-2 px-sm-3 px-md-4 py-4 mx-auto my-3 rounded-4 fomul-color"
-      >
-        <form class="text-start" action="./pages/Error404.html">
-          <!-- Nombre y Apellido -->
-          <div class="row mb-2">
-            <div class="col-12 col-md-6 mb-2 mb-md-0">
-              <label for="nombre" class="form-label Letras-sponsor">
-                NOMBRE <span class="text-danger">*</span>
-              </label>
-              <input
-                type="text"
-                class="form-control form-control-sm bg-form text-white border-secondary py-3 px-3 rounded-3"
-                id="nombre"
-                placeholder="  Ej. Martín"
-                minlength="3"
-                required
-              />
-            </div>
-            <div class="col-12 col-md-6 mb-2 mb-md-0">
-              <label for="apellido" class="form-label Letras-sponsor">
-                APELLIDO <span class="text-danger">*</span>
-              </label>
-              <input
-                type="text"
-                class="form-control form-control-sm bg-form text-white border-secondary py-3 px-3 rounded-3"
-                id="apellido"
-                placeholder="Ej. González"
-                minlength="3"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="row mb-2">
-            <div class="col-12 col-md-6 mb-2 mb-md-0">
-              <label for="empresa" class="form-label Letras-sponsor">
-                EMPRESA <span class="text-danger">*</span>
-              </label>
-              <input
-                type="text"
-                class="form-control form-control-sm bg-form text-white border-secondary py-3 px-3 rounded-3"
-                id="empresa"
-                placeholder="Ej. Acme Technologies"
-                required
-                minlength="3"
-              />
-            </div>
-            <div class="col-12 col-md-6 mb-2 mb-md-0">
-              <label for="email" class="form-label Letras-sponsor">
-                EMAIL CORPORATIVO <span class="text-danger">*</span>
-              </label>
-              <input
-                type="email"
-                class="form-control form-control-sm bg-form text-white border-secondary py-3 px-3 rounded-3"
-                id="email"
-                placeholder="martin@acme.com"
-                required
-              />
-            </div>
-          </div>
-
-          <!-- Tipo de Sponsor -->
-          <div class="mb-2">
-            <label for="tipo-sponsor" class="form-label Letras-sponsor">
-              TIPO DE SPONSOR <span class="text-danger">*</span>
-            </label>
-            <select
-              id="tipo-sponsor"
-              class="form-control form-control-sm bg-dark text-white border-secondary py-3 rounded-3"
-              required
-            >
-              <option value="" selected disabled class="Letras-sponsor">
-                Seleccioná un nivel de sponsoreo
-              </option>
-              <option value="platino">Platino</option>
-              <option value="oro">Oro</option>
-              <option value="plata">Plata</option>
-            </select>
-          </div>
-
-          <div class="mb-2">
-            <label class="form-label Letras-sponsor">LOGO DE LA EMPRESA</label>
-            <div
-              class="border border-secondary border-dashed p-3 text-center rounded-3 bg-form"
-              style="border-style: dashed !important; cursor: pointer"
-              onclick="document.getElementById('logo-file').click()"
-            >
-              <p class="mb-1 fw-semibold text-light small">
-                Hacé clic para adjuntar tu logo o arrastralo aquí
-              </p>
-              <p class="text-secondary m-0" style="font-size: 0.65rem">
-                Archivos aceptados: PNG, SVG, JPG o WEBP (Fondo transparente
-                recomendado, máx. 5MB)
-              </p>
-              <input
-                type="file"
-                class="d-none"
-                id="logo-file"
-                accept=".png, .svg, .jpg, .jpeg, .webp"
-              />
-            </div>
-          </div>
-
-          <!-- Mensaje Opcional -->
-          <div class="mb-3">
-            <label for="mensaje" class="form-label Letras-sponsor"
-              >MENSAJE OPCIONAL</label
-            >
-            <textarea
-              class="form-control bg-form text-white border-secondary"
-              id="mensaje"
-              rows="3"
-              placeholder="Contanos sobre tu empresa y porque buscas ser Sponsor del evento"
-            ></textarea>
-          </div>
-
-          <div class="d-grid">
-            <button type="submit" class="btn btn-danger fw-semibold py-4">
-              Enviar postulación de Sponsor
-            </button>
-          </div>
-        </form>
-      </section>
-
-
-
-      <!-- UBICACIÓN -->
-      <section class="ubicacion" id="ubicacion">
-        <div class="container">
-          <div class="ubicacion__bloque">
-            <div class="row gy-5 align-items-center">
-              <div class="col-lg-6">
-                <p class="ubicacion__etiqueta mb-3">Cómo llegar</p>
-                <h2 class="ubicacion__titulo mb-4">
-                  Te esperamos en Rolling Code School
-                </h2>
-
-                <div class="ubicacion__direccion d-flex gap-3 mb-4">
-                  <i class="bi bi-geo-alt-fill ubicacion__pin"></i>
-                  <div>
-                    <p class="ubicacion__calle m-0">
-                      Calle Gral. Paz 576, Entrepiso
-                    </p>
-                    <p class="ubicacion__ciudad m-0">
-                      4000 San Miguel de Tucumán, Tucumán
-                    </p>
-                  </div>
-                </div>
-
-                <ul class="list-unstyled d-flex flex-wrap gap-2 mb-4 p-0">
-                  <li class="ubicacion__chip">Jueves 19/11</li>
-                  <li class="ubicacion__chip">18:00 hs</li>
-                  <li class="ubicacion__chip">Entrepiso</li>
-                </ul>
-
-                <div class="d-flex flex-wrap gap-3">
-                  <a
-                    class="ubicacion__btn ubicacion__btn--rojo"
-                    href="https://www.bing.com/maps?q=Rolling+Code+School+Gral+Paz+576+Tucuman"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    Abrir en Bing Maps
-                  </a>
-                  <a
-                    class="ubicacion__btn ubicacion__btn--borde"
-                    href="#entrada"
-                  >
-                    Comprar entrada
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-6">
-                <div class="ubicacion__mapa">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1059174722677!2d-65.20974192477854!3d-26.83658327669254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1792788767459!5m2!1ses-419!2sar"
-                    title="Mapa de Rolling Code School"
-                    allowfullscreen
-                    loading="lazy"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                  >
-                  </iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- FIN UBICACIÓN -->
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div
-        class="container d-flex justify-content-between align-items-center flex-wrap gap-4"
-      >
-        <img
-          class="footer__logo"
-          src="./img/logoWhite.webp"
-          alt="Rolling Code School"
-        />
-
-        <ul class="footer__redes list-unstyled d-flex gap-2 m-0 p-0">
-          <li>
-            <a
-              class="footer__red"
-              href="https://www.instagram.com/rollingcodeschool/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Instagram"
-            >
-              <i class="bi bi-instagram"></i>
-            </a>
-          </li>
-
-          <li>
-            <a
-              class="footer__red"
-              href="https://www.facebook.com/RollingCodeSchool/"
-              target="_blank"
-              rel="noopener"
-              aria-label="Facebook"
-            >
-              <i class="bi bi-facebook"></i>
-            </a>
-          </li>
-
-          <li>
-            <a
-              class="footer__red"
-              href="https://www.linkedin.com/school/rollingcodeschool/"
-              target="_blank"
-              rel="noopener"
-              aria-label="LinkedIn"
-            >
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </li>
-
-          <li>
-            <a
-              class="footer__red"
-              href="https://www.youtube.com/@rollingcode7175"
-              target="_blank"
-              rel="noopener"
-              aria-label="YouTube"
-            >
-              <i class="bi bi-youtube"></i>
-            </a>
-          </li>
-
-          <li>
-            <a
-              class="footer__red"
-              href="https://x.com/rollingcodeok"
-              target="_blank"
-              rel="noopener"
-              aria-label="X"
-            >
-              <i class="bi bi-twitter-x"></i>
-            </a>
-          </li>
-
-          <li>
-            <a
-              class="footer__red"
-              href="https://github.com/rollingcodestudio"
-              target="_blank"
-              rel="noopener"
-              aria-label="GitHub"
-            >
-              <i class="bi bi-github"></i>
-            </a>
-          </li>
-        </ul>
+        <button class="carousel-control-prev" type="button" data-bs-target="#speakersCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#speakersCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
-    </footer>
+    </article>
+    <!-- FIN SPEAKERS -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/JS/temporizador.js"></script>
-  </body>
+    <!-- AGENDA -->
+    <section class="agenda" id="agenda">
+      <div class="container">
+        <div class="row gy-5 gx-lg-5">
+          <div class="col-lg-5">
+            <p class="agenda__etiqueta mb-3">Agenda</p>
+            <h2 class="agenda__titulo mb-4 fw-bold">
+              Jueves 19 de Noviembre
+            </h2>
+            <p class="agenda__texto mb-0">
+              Diez charlas cortas para salir con un plan claro. Al final queda
+              tiempo para preguntas y networking.
+            </p>
+          </div>
+
+          <div class="col-lg-7">
+            <ol class="agenda__lista list-unstyled m-0 p-0">
+              <li class="agenda__item d-flex align-items-center gap-4 py-3">
+                <span class="agenda__hora">18:00</span>
+                <div>
+                  <h3 class="agenda__charla m-0">
+                    Acreditación y bienvenida
+                  </h3>
+                </div>
+              </li>
+
+              <li class="agenda__item d-flex align-items-center gap-4 py-3">
+                <span class="agenda__hora">18:20</span>
+                <div>
+                  <h3 class="agenda__charla m-0">
+                    Tu primer día como developer
+                  </h3>
+                  <p class="agenda__speaker m-0 mt-1">Daniela Cardozo</p>
+                </div>
+              </li>
+
+              <li class="agenda__item d-flex align-items-center gap-4 py-3">
+                <span class="agenda__hora">18:40</span>
+                <div>
+                  <h3 class="agenda__charla m-0">
+                    De cero a tu primer proyecto
+                  </h3>
+                  <p class="agenda__speaker m-0 mt-1">Franco Diaz</p>
+                </div>
+              </li>
+
+              <li class="agenda__item d-flex align-items-center gap-4 py-3">
+                <span class="agenda__hora">19:00</span>
+                <div>
+                  <h3 class="agenda__charla m-0">
+                    Armá tu portafolio con IA
+                  </h3>
+                  <p class="agenda__speaker m-0 mt-1">Gaston</p>
+                </div>
+              </li>
+
+              <li class="agenda__item d-flex align-items-center gap-4 py-3">
+                <span class="agenda__hora">19:20</span>
+                <div>
+                  <h3 class="agenda__charla m-0">Git y GitHub sin miedo</h3>
+                  <p class="agenda__speaker m-0 mt-1">Mauro</p>
+                </div>
+              </li>
+
+              <li class="agenda__item d-flex align-items-center gap-4 py-3">
+                <span class="agenda__hora">19:40</span>
+                <div>
+                  <h3 class="agenda__charla m-0">
+                    Tu primer backend con Node
+                  </h3>
+                  <p class="agenda__speaker m-0 mt-1">Jose Diaz</p>
+                </div>
+              </li>
+
+              <li class="agenda__item d-flex align-items-center gap-4 py-3">
+                <span class="agenda__hora">20:00</span>
+                <div>
+                  <h3 class="agenda__charla m-0">
+                    Preparáte para tu primera entrevista
+                  </h3>
+                  <p class="agenda__speaker m-0 mt-1">Tomas Gomez</p>
+                </div>
+              </li>
+
+              <li class="agenda__item d-flex align-items-center gap-4 py-3">
+                <span class="agenda__hora">20:20</span>
+                <div>
+                  <h3 class="agenda__charla m-0">Mi primer trabajo en IT</h3>
+                  <p class="agenda__speaker m-0 mt-1">Pablo Basso</p>
+                </div>
+              </li>
+
+              <li class="agenda__item d-flex align-items-center gap-4 py-3">
+                <span class="agenda__hora">20:40</span>
+                <div>
+                  <h3 class="agenda__charla m-0">
+                    Testing: cómo no romper todo
+                  </h3>
+                  <p class="agenda__speaker m-0 mt-1">Julian Martin</p>
+                </div>
+              </li>
+
+              <li class="agenda__item d-flex align-items-center gap-4 py-3">
+                <span class="agenda__hora">21:00</span>
+                <div>
+                  <h3 class="agenda__charla m-0">Diseño para developer</h3>
+                  <p class="agenda__speaker m-0 mt-1">Tomas Escudero</p>
+                </div>
+              </li>
+
+              <li class="agenda__item d-flex align-items-center gap-4 py-3">
+                <span class="agenda__hora">21:20</span>
+                <div>
+                  <h3 class="agenda__charla m-0">Tu primera base de datos</h3>
+                  <p class="agenda__speaker m-0 mt-1">Andres Perlo</p>
+                </div>
+              </li>
+
+              <li class="agenda__item d-flex align-items-center gap-4 py-3">
+                <span class="agenda__hora">21:40</span>
+                <div>
+                  <h3 class="agenda__charla m-0">Preguntas y networking</h3>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIN AGENDA -->
+
+    <section class="container-fluid sponsors-section py-5" id="sponsors">
+      <div class="mb-5">
+        <header class="sponsor-tier-heading mb-3">
+          <div class="d-flex flex-wrap align-items-center gap-2">
+            <h2 class="text-uppercase fw-bold mb-0 sponsor-tier-title">
+              Main Partners
+            </h2>
+            <span class="sponsor-tier-badge">Tier Diamante</span>
+          </div>
+
+          <p class="sponsor-tier-description mb-0">
+            Presencia estelar en conferencias, stands experienciales y becas
+            formativas
+          </p>
+        </header>
+
+        <div class="row g-3 g-lg-4">
+          <div class="col-12 col-md-6 col-xl-4">
+            <a href="https://cloud.google.com/" target="_blank" rel="noopener noreferrer"
+              class="sponsor-card sponsor-diamond d-flex flex-column h-100 p-3 p-lg-4 rounded-4 text-decoration-none">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="sponsor-category">Lead Cloud Partner</span>
+                <span class="sponsor-external" aria-hidden="true">↗</span>
+              </div>
+
+              <div class="sponsor-logo-box d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Google_Cloud_icon_(2026).svg"
+                  alt="Logo de Google Cloud" class="sponsor-logo" />
+              </div>
+
+              <h3 class="text-center fw-bold sponsor-name mb-2">
+                Google Cloud
+              </h3>
+
+              <p class="sponsor-description text-center mb-3">
+                Infraestructura global ultra-escalable, Gemini AI APIs y
+                programas de formación profesional para desarrolladores.
+              </p>
+
+              <div class="sponsor-card-footer d-flex justify-content-between align-items-center gap-2 mt-auto pt-3">
+                <span class="sponsor-sector">◉ Cloud &amp; AI</span>
+                <span class="sponsor-status">100% Verified</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer"
+              class="sponsor-card sponsor-diamond sponsor-aws d-flex flex-column h-100 p-3 p-lg-4 rounded-4 text-decoration-none">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="sponsor-category">Infrastructure Partner</span>
+                <span class="sponsor-external" aria-hidden="true">↗</span>
+              </div>
+
+              <div class="sponsor-logo-box d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Amazon_Web_Services_2025.svg"
+                  alt="Logo de Amazon Web Services" class="sponsor-logo" />
+              </div>
+
+              <h3 class="text-center fw-bold sponsor-name mb-2">
+                Amazon Web Services
+              </h3>
+
+              <p class="sponsor-description text-center mb-3">
+                Servicios de nube, arquitecturas serverless y vouchers para
+                certificaciones oficiales para la comunidad.
+              </p>
+
+              <div class="sponsor-card-footer d-flex justify-content-between align-items-center gap-2 mt-auto pt-3">
+                <span class="sponsor-sector">▤ Cloud Hosting</span>
+                <span class="sponsor-status">Global Leader</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <a href="https://www.mercadolibre.com.ar/" target="_blank" rel="noopener noreferrer"
+              class="sponsor-card sponsor-diamond sponsor-mercadolibre d-flex flex-column h-100 p-3 p-lg-4 rounded-4 text-decoration-none">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="sponsor-category">Fintech &amp; E-commerce</span>
+                <span class="sponsor-external" aria-hidden="true">↗</span>
+              </div>
+
+              <div class="sponsor-logo-box d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="https://raw.githubusercontent.com/Aerolab/silicon-baires/main/assets/logos/ml_iso.svg"
+                  alt="Isotipo de Mercado Libre" class="sponsor-logo" />
+              </div>
+
+              <h3 class="text-center fw-bold sponsor-name mb-2">
+                Mercado Libre
+              </h3>
+
+              <p class="sponsor-description text-center mb-3">
+                El mayor ecosistema tech de Latinoamérica, impulsando becas,
+                hackathons y pasantías directas de empleo.
+              </p>
+
+              <div class="sponsor-card-footer d-flex justify-content-between align-items-center gap-2 mt-auto pt-3">
+                <span class="sponsor-sector">▤ Fintech Scale</span>
+                <span class="sponsor-status">Unicorn LATAM</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-5">
+        <header class="sponsor-tier-heading mb-3">
+          <div class="d-flex flex-wrap align-items-center gap-2">
+            <h2 class="text-uppercase fw-bold mb-0 sponsor-tier-title sponsor-gold-text">
+              Gold Tier
+            </h2>
+            <span class="sponsor-tier-badge sponsor-gold-badge">Nivel Oro</span>
+          </div>
+
+          <p class="sponsor-tier-description mb-0">
+            Líderes de producto, frameworks y transformación digital global
+          </p>
+        </header>
+
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-xl">
+            <a href="https://www.microsoft.com/" target="_blank" rel="noopener noreferrer"
+              class="sponsor-card sponsor-gold d-flex flex-column align-items-center h-100 p-3 rounded-4 text-decoration-none">
+              <div class="sponsor-logo-box sponsor-logo-small d-flex align-items-center justify-content-center mb-2">
+                <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Microsoft_icon.svg"
+                  alt="Símbolo de Microsoft" class="sponsor-logo" />
+              </div>
+              <h3 class="sponsor-name fw-bold text-center mb-1">Microsoft</h3>
+              <p class="sponsor-description text-center mb-2">
+                Azure &amp; Dev Tools
+              </p>
+              <span class="sponsor-category">Enterprise</span>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-xl">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+              class="sponsor-card sponsor-gold d-flex flex-column align-items-center h-100 p-3 rounded-4 text-decoration-none">
+              <div class="sponsor-logo-box sponsor-logo-small d-flex align-items-center justify-content-center mb-2">
+                <img src="https://cdn.simpleicons.org/github/FFFFFF" alt="Logo de GitHub" class="sponsor-logo" />
+              </div>
+              <h3 class="sponsor-name fw-bold text-center mb-1">GitHub</h3>
+              <p class="sponsor-description text-center mb-2">
+                Open Source &amp; Copilot
+              </p>
+              <span class="sponsor-category">Community</span>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-xl">
+            <a href="https://www.globant.com/" target="_blank" rel="noopener noreferrer"
+              class="sponsor-card sponsor-gold d-flex flex-column align-items-center h-100 p-3 rounded-4 text-decoration-none">
+              <div class="sponsor-logo-box sponsor-logo-small d-flex align-items-center justify-content-center mb-2">
+                <img src="https://cdn.simpleicons.org/google/FFFFFF" alt="Logo ilustrativo de Globant"
+                  class="sponsor-logo" />
+              </div>
+              <h3 class="sponsor-name fw-bold text-center mb-1">Globant</h3>
+              <p class="sponsor-description text-center mb-2">
+                Tech Reinvention
+              </p>
+              <span class="sponsor-category">Global Talent</span>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-xl">
+            <a href="https://auth0.com/" target="_blank" rel="noopener noreferrer"
+              class="sponsor-card sponsor-gold d-flex flex-column align-items-center h-100 p-3 rounded-4 text-decoration-none">
+              <div class="sponsor-logo-box sponsor-logo-small d-flex align-items-center justify-content-center mb-2">
+                <img src="https://cdn.simpleicons.org/auth0/EB5424" alt="Logo de Auth0" class="sponsor-logo" />
+              </div>
+              <h3 class="sponsor-name fw-bold text-center mb-1">Auth0</h3>
+              <p class="sponsor-description text-center mb-2">
+                Identity &amp; Security
+              </p>
+              <span class="sponsor-category">Security</span>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-xl">
+            <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer"
+              class="sponsor-card sponsor-gold d-flex flex-column align-items-center h-100 p-3 rounded-4 text-decoration-none">
+              <div class="sponsor-logo-box sponsor-logo-small d-flex align-items-center justify-content-center mb-2">
+                <img src="https://cdn.simpleicons.org/vercel/FFFFFF" alt="Logo de Vercel" class="sponsor-logo" />
+              </div>
+              <h3 class="sponsor-name fw-bold text-center mb-1">Vercel</h3>
+              <p class="sponsor-description text-center mb-2">
+                Frontend Cloud &amp; Next
+              </p>
+              <span class="sponsor-category">Deployment</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <header class="sponsor-tier-heading mb-3">
+          <div class="d-flex flex-wrap align-items-center gap-2">
+            <h2 class="text-uppercase fw-bold mb-0 sponsor-tier-title sponsor-bronze-text">
+              Bronze Tier
+            </h2>
+            <span class="sponsor-tier-badge sponsor-bronze-badge">Nivel Bronce</span>
+          </div>
+
+          <p class="sponsor-tier-description mb-0">
+            Herramientas y plataformas predilectas de la comunidad de
+            desarrolladores
+          </p>
+        </header>
+
+        <div class="row g-2">
+          <div class="col-6 col-md-4 col-xl">
+            <a href="https://supabase.com/" target="_blank" rel="noopener noreferrer"
+              class="sponsor-card sponsor-bronze d-flex flex-column align-items-center h-100 p-2 rounded-3 text-decoration-none">
+              <div class="sponsor-logo-box sponsor-logo-tiny d-flex align-items-center justify-content-center mb-2">
+                <img src="https://cdn.simpleicons.org/supabase/3ECF8E" alt="Logo de Supabase" class="sponsor-logo" />
+              </div>
+              <h3 class="sponsor-name fw-bold text-center mb-1">Supabase</h3>
+              <p class="sponsor-description text-center mb-0">
+                Open-source DB
+              </p>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-xl">
+            <a href="https://www.digitalocean.com/" target="_blank" rel="noopener noreferrer"
+              class="sponsor-card sponsor-bronze d-flex flex-column align-items-center h-100 p-2 rounded-3 text-decoration-none">
+              <div class="sponsor-logo-box sponsor-logo-tiny d-flex align-items-center justify-content-center mb-2">
+                <img src="https://cdn.simpleicons.org/digitalocean/0080FF" alt="Logo de DigitalOcean"
+                  class="sponsor-logo" />
+              </div>
+              <h3 class="sponsor-name fw-bold text-center mb-1">
+                DigitalOcean
+              </h3>
+              <p class="sponsor-description text-center mb-0">Cloud VPS</p>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-xl">
+            <a href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer"
+              class="sponsor-card sponsor-bronze d-flex flex-column align-items-center h-100 p-2 rounded-3 text-decoration-none">
+              <div class="sponsor-logo-box sponsor-logo-tiny d-flex align-items-center justify-content-center mb-2">
+                <img src="https://cdn.simpleicons.org/cloudflare/F38020" alt="Logo de Cloudflare"
+                  class="sponsor-logo" />
+              </div>
+              <h3 class="sponsor-name fw-bold text-center mb-1">
+                Cloudflare
+              </h3>
+              <p class="sponsor-description text-center mb-0">
+                Edge &amp; DNS
+              </p>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-xl">
+            <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer"
+              class="sponsor-card sponsor-bronze d-flex flex-column align-items-center h-100 p-2 rounded-3 text-decoration-none">
+              <div class="sponsor-logo-box sponsor-logo-tiny d-flex align-items-center justify-content-center mb-2">
+                <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="Logo de MongoDB" class="sponsor-logo" />
+              </div>
+              <h3 class="sponsor-name fw-bold text-center mb-1">MongoDB</h3>
+              <p class="sponsor-description text-center mb-0">Document DB</p>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-xl">
+            <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer"
+              class="sponsor-card sponsor-bronze d-flex flex-column align-items-center h-100 p-2 rounded-3 text-decoration-none">
+              <div class="sponsor-logo-box sponsor-logo-tiny d-flex align-items-center justify-content-center mb-2">
+                <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Logo de Docker" class="sponsor-logo" />
+              </div>
+              <h3 class="sponsor-name fw-bold text-center mb-1">Docker</h3>
+              <p class="sponsor-description text-center mb-0">Containers</p>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-xl">
+            <a href="https://stripe.com/" target="_blank" rel="noopener noreferrer"
+              class="sponsor-card sponsor-bronze d-flex flex-column align-items-center h-100 p-2 rounded-3 text-decoration-none">
+              <div class="sponsor-logo-box sponsor-logo-tiny d-flex align-items-center justify-content-center mb-2">
+                <img src="https://cdn.simpleicons.org/stripe/635BFF" alt="Logo de Stripe" class="sponsor-logo" />
+              </div>
+              <h3 class="sponsor-name fw-bold text-center mb-1">Stripe</h3>
+              <p class="sponsor-description text-center mb-0">Payments API</p>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-xl">
+            <a href="https://www.postman.com/" target="_blank" rel="noopener noreferrer"
+              class="sponsor-card sponsor-bronze d-flex flex-column align-items-center h-100 p-2 rounded-3 text-decoration-none">
+              <div class="sponsor-logo-box sponsor-logo-tiny d-flex align-items-center justify-content-center mb-2">
+                <img src="https://cdn.simpleicons.org/postman/FF6C37" alt="Logo de Postman" class="sponsor-logo" />
+              </div>
+              <h3 class="sponsor-name fw-bold text-center mb-1">Postman</h3>
+              <p class="sponsor-description text-center mb-0">API Platform</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGOS -->
+    <article class="container px-3 px-lg-4 py-4" id="pagos">
+      <section class="early-banner rounded-4 p-3 p-md-4 mb-4">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-lg-4">
+            <p class="early-label fw-bold mb-1">EARLY BIRD</p>
+            <h2 class="early-title fw-bold mb-2">
+              El precio especial termina el 31/10
+            </h2>
+            <p class="early-description mb-0">
+              Después la entrada pasa de $25.000 a $35.000.
+            </p>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="d-flex justify-content-center gap-2 flex-wrap">
+              <div class="countdown-box text-center rounded-4 p-2">
+                <span class="countdown-number" id="countdown-days">00</span>
+                <span class="countdown-unit">DÍAS</span>
+              </div>
+
+              <div class="countdown-box text-center rounded-4 p-2">
+                <span class="countdown-number" id="countdown-hours">00</span>
+                <span class="countdown-unit">HORAS</span>
+              </div>
+
+              <div class="countdown-box text-center rounded-4 p-2">
+                <span class="countdown-number" id="countdown-minutes">00</span>
+                <span class="countdown-unit">MIN</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="d-flex justify-content-between align-items-center gap-2 mb-2">
+              <span class="early-progress-label">Quedan 38 de 60 Early Bird</span>
+              <span class="early-progress-percent">37% vendidas</span>
+            </div>
+
+            <div class="progress early-progress" role="progressbar" aria-label="Entradas Early Bird vendidas"
+              aria-valuenow="22" aria-valuemin="0" aria-valuemax="60">
+              <div class="progress-bar early-progress-bar" style="width: 37%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row g-3">
+        <!-- EARLY BIRD -->
+        <div class="col-12 col-lg-6">
+          <article class="card ticket-card h-100 rounded-4 p-3 p-lg-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h2 class="h6 fw-bold mb-0 ticket-title">Early Bird</h2>
+              <span class="badge rounded-pill text-bg-dark">Quedan 38</span>
+            </div>
+
+            <div class="mb-3">
+              <p class="display-6 fw-bold mb-0 ticket-price">$25.000</p>
+              <del class="small ticket-muted">$35.000</del>
+            </div>
+
+            <p class="small mb-3 ticket-description">
+              Presencial · precio especial hasta el 31/10
+            </p>
+
+            <ul class="list-unstyled small mb-4">
+              <li class="mb-2">
+                <span class="ticket-check me-2">✓</span><span class="ticket-feature">Acceso a las 10 charlas</span>
+              </li>
+              <li class="mb-2">
+                <span class="ticket-check me-2">✓</span><span class="ticket-feature">Kit de stickers Rolling Code</span>
+              </li>
+              <li class="mb-2">
+                <span class="ticket-check me-2">✓</span><span class="ticket-feature">Certificado de asistencia</span>
+              </li>
+              <li class="mb-2">
+                <span class="ticket-check me-2">✓</span><span class="ticket-feature">Coffee break y networking con los
+                  speakers</span>
+              </li>
+              <li>
+                <span class="ticket-check me-2">✓</span><span class="ticket-feature">Grabación de todas las
+                  charlas</span>
+              </li>
+            </ul>
+
+            <a href="#entrada" type="button" class="btn rounded-pill fw-bold mt-auto ticket-button">
+              Comprar entrada
+            </a>
+          </article>
+        </div>
+
+        <!-- GENERAL -->
+        <div class="col-12 col-lg-6">
+          <article class="card ticket-card h-100 rounded-4 p-3 p-lg-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h2 class="h6 fw-bold mb-0 ticket-title">General</h2>
+              <span class="badge rounded-pill border border-secondary fw-normal">
+                Desde el 1/11
+              </span>
+            </div>
+
+            <div class="mb-3">
+              <p class="display-6 fw-bold mb-0 ticket-price">$35.000</p>
+            </div>
+
+            <p class="small mb-3 ticket-description">
+              Presencial · precio regular
+            </p>
+
+            <ul class="list-unstyled small mb-4">
+              <li class="mb-2">
+                <span class="ticket-check me-2">✓</span><span class="ticket-feature">Acceso a las 10 charlas</span>
+              </li>
+              <li class="mb-2">
+                <span class="ticket-check me-2">✓</span><span class="ticket-feature">Certificado de asistencia</span>
+              </li>
+              <li class="mb-2">
+                <span class="ticket-check me-2">✓</span><span class="ticket-feature">Coffee break y networking con los
+                  speakers</span>
+              </li>
+              <li>
+                <span class="ticket-check me-2">✓</span><span class="ticket-feature">Grabación de todas las
+                  charlas</span>
+              </li>
+            </ul>
+
+            <a href="#entrada" type="button" class="btn rounded-pill fw-bold mt-auto ticket-button">
+              Comprar entrada
+            </a>
+          </article>
+        </div>
+
+        <!-- VIRTUAL -->
+        <div class="col-12">
+          <article class="card ticket-card h-100 rounded-4 p-3 p-lg-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h2 class="h6 fw-bold mb-0 ticket-title">Virtual</h2>
+              <span class="badge rounded-pill border border-secondary fw-normal">
+                Desde donde estés
+              </span>
+            </div>
+
+            <div class="mb-3">
+              <p class="display-6 fw-bold mb-0 ticket-price">$15.000</p>
+            </div>
+
+            <p class="small mb-3 ticket-description">Transmisión en vivo</p>
+
+            <ul class="list-unstyled small mb-4">
+              <li class="mb-2">
+                <span class="ticket-check me-2">✓</span><span class="ticket-feature">Transmisión en vivo de las 10
+                  charlas</span>
+              </li>
+              <li class="mb-2">
+                <span class="ticket-check me-2">✓</span><span class="ticket-feature">Chat para hacer preguntas a los
+                  speakers</span>
+              </li>
+              <li class="mb-2">
+                <span class="ticket-check me-2">✓</span><span class="ticket-feature">Certificado de asistencia</span>
+              </li>
+              <li>
+                <span class="ticket-check me-2">✓</span><span class="ticket-feature">Grabación disponible por 30
+                  días</span>
+              </li>
+            </ul>
+
+            <a href="#entrada" type="button" class="btn rounded-pill fw-bold mt-auto ticket-button">
+              Comprar entrada
+            </a>
+          </article>
+        </div>
+      </section>
+    </article>
+    <!-- FIN PAGOS -->
+
+    <!-- CHECKOUT DE EJEMPLO -->
+    <article class="container-fluid checkout-wrapper py-4 py-lg-5">
+      <section class="checkout-container p-3 p-md-4 p-xl-5">
+        <header class="mb-4">
+          <div class="row align-items-end g-4">
+            <div class="col-12 col-lg-7">
+              <p class="text-white fw-bold small mb-2 checkout-label">
+                COMPRA SEGURA
+              </p>
+              <h2 class="text-white fw-bold mb-0 display-5">
+                Finalizá tu compra
+              </h2>
+            </div>
+
+            <div class="col-12 col-lg-5">
+              <nav class="d-flex flex-wrap justify-content-lg-end gap-2" aria-label="Etapas de compra">
+                <a href="#entrada" class="step-link rounded-pill px-3 py-2 small">1 Entrada</a>
+                <a href="#datos" class="step-link rounded-pill px-3 py-2 small">2 Datos</a>
+                <a href="#pago" class="step-link rounded-pill px-3 py-2 small">3 Pago</a>
+                <a href="#listo" class="step-link rounded-pill px-3 py-2 small">4 Listo</a>
+              </nav>
+            </div>
+          </div>
+        </header>
+
+        <div class="row align-items-start g-4">
+          <div class="col-12 col-lg-7" id="entrada">
+            <section class="ticket-selection bg-white text-black p-3 p-md-4 rounded-4">
+              <h3 class="fw-bold fs-5 mb-3">Elegí tu entrada</h3>
+
+              <div class="d-grid gap-2">
+                <label class="ticket-option d-flex justify-content-between align-items-center gap-3 p-3 rounded-4">
+                  <input type="radio" name="ticket" value="early" class="visually-hidden" checked />
+                  <span class="d-flex flex-column">
+                    <span class="ticket-name fw-bold">Early Bird</span>
+                    <span class="ticket-description small">Presencial · hasta el 31/10</span>
+                  </span>
+                  <span class="ticket-price fw-bold text-nowrap">$25.000</span>
+                </label>
+
+                <label class="ticket-option d-flex justify-content-between align-items-center gap-3 p-3 rounded-4">
+                  <input type="radio" name="ticket" value="general" class="visually-hidden" />
+                  <span class="d-flex flex-column">
+                    <span class="ticket-name fw-bold">General</span>
+                    <span class="ticket-description small">Presencial · desde el 1/11</span>
+                  </span>
+                  <span class="ticket-price fw-bold text-nowrap">$35.000</span>
+                </label>
+
+                <label class="ticket-option d-flex justify-content-between align-items-center gap-3 p-3 rounded-4">
+                  <input type="radio" name="ticket" value="virtual" class="visually-hidden" />
+                  <span class="d-flex flex-column">
+                    <span class="ticket-name fw-bold">Virtual</span>
+                    <span class="ticket-description small">Transmisión en vivo y grabación</span>
+                  </span>
+                  <span class="ticket-price fw-bold text-nowrap">$15.000</span>
+                </label>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center mt-4 mb-3">
+                <label for="quantity" class="fw-bold small">Cantidad</label>
+                <div class="d-flex align-items-center gap-3">
+                  <button type="button" class="quantity-button" aria-label="Disminuir cantidad">
+                    −
+                  </button>
+                  <span id="quantity" class="fw-bold fs-5">1</span>
+                  <button type="button" class="quantity-button" aria-label="Aumentar cantidad">
+                    +
+                  </button>
+                </div>
+              </div>
+
+              <a href="./pages/Error404.html" type="button"
+                class="checkout-button w-100 text-center rounded-pill py-3 fw-bold">
+                Continuar
+              </a>
+
+              <p class="text-secondary small mt-3 mb-0">
+                Pasarela de pago de ejemplo: no se procesan pagos ni se
+                guardan datos.
+              </p>
+            </section>
+          </div>
+
+          <aside class="col-12 col-lg-5">
+            <section class="order-summary bg-black text-white rounded-4 p-3 p-md-4">
+              <p class="summary-label fw-bold small mb-3">TU PEDIDO</p>
+              <h3 class="fw-bold fs-5 mb-1">Workshop Rolling Code School</h3>
+              <p class="summary-description small mb-3">
+                Jueves 19/11 · 18:00 hs · Gral. Paz 576
+              </p>
+
+              <hr />
+
+              <div class="d-flex justify-content-between gap-3 mb-3">
+                <span class="summary-muted small">1 entrada Early Bird</span>
+                <span class="summary-muted small text-nowrap">$25.000</span>
+              </div>
+
+              <div class="d-flex justify-content-between gap-3 mb-3">
+                <span class="summary-muted small">Cargo por servicio (5%)</span>
+                <span class="summary-muted small text-nowrap">$1.250</span>
+              </div>
+
+              <hr />
+
+              <div class="d-flex justify-content-between align-items-center gap-3 mt-3">
+                <span class="fw-bold">Total</span>
+                <span class="summary-total fw-bold fs-2">$26.250</span>
+              </div>
+
+              <p class="summary-description small mt-3 mb-0">
+                <span class="text-danger me-2">🔒</span>
+                Pago protegido. Recibís la entrada por email.
+              </p>
+            </section>
+          </aside>
+        </div>
+      </section>
+    </article>
+    <!-- FIN CHECKOUT -->
+
+
+
+    <section class="container text-center">
+      <h1 class=" fw-bold mb-3">Sumate como Sponsor</h1>
+      <p class="mx-auto sp-l mb-4">
+        Conecta con mas de 120 talentos IT, programadores junior, semi-seniors
+        y lideres tecnologicos del norte argentino.Completa el formulario y
+        nos contactaremos en menos de 24 horas habiles
+      </p>
+    </section>
+    <section
+      class="border border-secondary container bg-dark text-white px-2 px-sm-3 px-md-4 py-4 mx-auto my-3 rounded-4 fomul-color">
+      <form class="text-start" action="./pages/Error404.html">
+        <!-- Nombre y Apellido -->
+        <div class="row mb-2">
+          <div class="col-12 col-md-6 mb-2 mb-md-0">
+            <label for="nombre" class="form-label Letras-sponsor">
+              NOMBRE <span class="text-danger">*</span>
+            </label>
+            <input type="text"
+              class="form-control form-control-sm bg-form text-white border-secondary py-3 px-3 rounded-3" id="nombre"
+              placeholder="  Ej. Martín" minlength="3" required />
+          </div>
+          <div class="col-12 col-md-6 mb-2 mb-md-0">
+            <label for="apellido" class="form-label Letras-sponsor">
+              APELLIDO <span class="text-danger">*</span>
+            </label>
+            <input type="text"
+              class="form-control form-control-sm bg-form text-white border-secondary py-3 px-3 rounded-3" id="apellido"
+              placeholder="Ej. González" minlength="3" required />
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-12 col-md-6 mb-2 mb-md-0">
+            <label for="empresa" class="form-label Letras-sponsor">
+              EMPRESA <span class="text-danger">*</span>
+            </label>
+            <input type="text"
+              class="form-control form-control-sm bg-form text-white border-secondary py-3 px-3 rounded-3" id="empresa"
+              placeholder="Ej. Acme Technologies" required minlength="3" />
+          </div>
+          <div class="col-12 col-md-6 mb-2 mb-md-0">
+            <label for="email" class="form-label Letras-sponsor">
+              EMAIL CORPORATIVO <span class="text-danger">*</span>
+            </label>
+            <input type="email"
+              class="form-control form-control-sm bg-form text-white border-secondary py-3 px-3 rounded-3" id="email"
+              placeholder="martin@acme.com" required />
+          </div>
+        </div>
+
+        <!-- Tipo de Sponsor -->
+        <div class="mb-2">
+          <label for="tipo-sponsor" class="form-label Letras-sponsor">
+            TIPO DE SPONSOR <span class="text-danger">*</span>
+          </label>
+          <select id="tipo-sponsor"
+            class="form-control form-control-sm bg-dark text-white border-secondary py-3 rounded-3" required>
+            <option value="" selected disabled class="Letras-sponsor">
+              Seleccioná un nivel de sponsoreo
+            </option>
+            <option value="platino">Platino</option>
+            <option value="oro">Oro</option>
+            <option value="plata">Plata</option>
+          </select>
+        </div>
+
+        <div class="mb-2">
+          <label class="form-label Letras-sponsor">LOGO DE LA EMPRESA</label>
+          <div class="border border-secondary border-dashed p-3 text-center rounded-3 bg-form"
+            style="border-style: dashed !important; cursor: pointer"
+            onclick="document.getElementById('logo-file').click()">
+            <p class="mb-1 fw-semibold text-light small">
+              Hacé clic para adjuntar tu logo o arrastralo aquí
+            </p>
+            <p class="text-secondary m-0" style="font-size: 0.65rem">
+              Archivos aceptados: PNG, SVG, JPG o WEBP (Fondo transparente
+              recomendado, máx. 5MB)
+            </p>
+            <input type="file" class="d-none" id="logo-file" accept=".png, .svg, .jpg, .jpeg, .webp" />
+          </div>
+        </div>
+
+        <!-- Mensaje Opcional -->
+        <div class="mb-3">
+          <label for="mensaje" class="form-label Letras-sponsor">MENSAJE OPCIONAL</label>
+          <textarea class="form-control bg-form text-white border-secondary" id="mensaje" rows="3"
+            placeholder="Contanos sobre tu empresa y porque buscas ser Sponsor del evento"></textarea>
+        </div>
+
+        <div class="d-grid">
+          <button type="submit" class="btn btn-danger fw-semibold py-4">
+            Enviar postulación de Sponsor
+          </button>
+        </div>
+      </form>
+    </section>
+
+
+
+    <!-- UBICACIÓN -->
+    <section class="ubicacion" id="ubicacion">
+      <div class="container">
+        <div class="ubicacion__bloque">
+          <div class="row gy-5 align-items-center">
+            <div class="col-lg-6">
+              <p class="ubicacion__etiqueta mb-3">Cómo llegar</p>
+              <h2 class="ubicacion__titulo mb-4">
+                Te esperamos en Rolling Code School
+              </h2>
+
+              <div class="ubicacion__direccion d-flex gap-3 mb-4">
+                <i class="bi bi-geo-alt-fill ubicacion__pin"></i>
+                <div>
+                  <p class="ubicacion__calle m-0">
+                    Calle Gral. Paz 576, Entrepiso
+                  </p>
+                  <p class="ubicacion__ciudad m-0">
+                    4000 San Miguel de Tucumán, Tucumán
+                  </p>
+                </div>
+              </div>
+
+              <ul class="list-unstyled d-flex flex-wrap gap-2 mb-4 p-0">
+                <li class="ubicacion__chip">Jueves 19/11</li>
+                <li class="ubicacion__chip">18:00 hs</li>
+                <li class="ubicacion__chip">Entrepiso</li>
+              </ul>
+
+              <div class="d-flex flex-wrap gap-3">
+                <a class="ubicacion__btn ubicacion__btn--rojo"
+                  href="https://www.bing.com/maps?q=Rolling+Code+School+Gral+Paz+576+Tucuman" target="_blank"
+                  rel="noopener">
+                  Abrir en Bing Maps
+                </a>
+                <a class="ubicacion__btn ubicacion__btn--borde" href="#entrada">
+                  Comprar entrada
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="ubicacion__mapa">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1059174722677!2d-65.20974192477854!3d-26.83658327669254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1792788767459!5m2!1ses-419!2sar"
+                  title="Mapa de Rolling Code School" allowfullscreen loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIN UBICACIÓN -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap gap-4">
+      <img class="footer__logo" src="./img/logoWhite.webp" alt="Rolling Code School" />
+
+      <ul class="footer__redes list-unstyled d-flex gap-2 m-0 p-0">
+        <li>
+          <a class="footer__red" href="https://www.instagram.com/rollingcodeschool/" target="_blank" rel="noopener"
+            aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </li>
+
+        <li>
+          <a class="footer__red" href="https://www.facebook.com/RollingCodeSchool/" target="_blank" rel="noopener"
+            aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </li>
+
+        <li>
+          <a class="footer__red" href="https://www.linkedin.com/school/rollingcodeschool/" target="_blank"
+            rel="noopener" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </li>
+
+        <li>
+          <a class="footer__red" href="https://www.youtube.com/@rollingcode7175" target="_blank" rel="noopener"
+            aria-label="YouTube">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </li>
+
+        <li>
+          <a class="footer__red" href="https://x.com/rollingcodeok" target="_blank" rel="noopener" aria-label="X">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+        </li>
+
+        <li>
+          <a class="footer__red" href="https://github.com/rollingcodestudio" target="_blank" rel="noopener"
+            aria-label="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="/JS/temporizador.js"></script>
+</body>
+
 </html>

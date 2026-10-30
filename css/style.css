@@ -1101,3 +1101,27 @@ h2,
 textarea#mensaje {
   resize: none !important;
 }
+
+/* SPEAKERS: carrusel solo en celular */
+@media (max-width: 575.98px) {
+  .speakers-row {
+    flex-wrap: nowrap;
+    justify-content: flex-start !important; /* pisa el justify-content-center de Bootstrap */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;          /* oculta la barra en Firefox */
+    padding-bottom: 8px;
+  }
+
+  .speakers-row::-webkit-scrollbar {
+    display: none;                  /* oculta la barra en Chrome, Edge y Safari */
+  }
+
+  .speakers-row > .col {
+    flex: 0 0 82%;
+    width: 82%;
+    max-width: 82%;
+    scroll-snap-align: start;
+  }
+}
