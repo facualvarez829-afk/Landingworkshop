@@ -113,7 +113,7 @@ body {
 
   /* COMIENZO DEL HERO */
   .Hero-titulo {
-    font-size: clamp(40px, 6vw, 88px);
+    font-size: clamp(40px, 6vw, 80px);
     font-weight: 800;
     line-height: 1.02;
     letter-spacing: -1.5px;
